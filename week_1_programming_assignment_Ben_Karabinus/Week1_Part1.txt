@@ -1,0 +1,16 @@
+#Ben Karabinus
+#Comp 3006
+#Week 1 Part 1
+#9/1/2020
+
+##### Step 1.a #####
+
+cut -c 63-69 Data.txt > T_DAILY_AVG.txt
+
+##### step 1.b #####
+
+sort -n T_DAILY_AVG.txt > T_DAILY_AVG_sorted.txt
+
+##### Step 1.c #####
+
+cut -c 63-69 Data.txt | sort -n | Python3.8 compute_stats.py
