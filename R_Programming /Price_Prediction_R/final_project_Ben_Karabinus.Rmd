@@ -1,0 +1,234 @@
+---
+title: "Automated Home Appraisal System"
+author: "Ben Karabinus"
+date: "5/8/2020"
+output:
+  html_document:
+    df_print: paged
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+if(!require(DataExplorer)){install.packages("DataExplorer")}
+library(DataExplorer)
+if(!require(psych)){install.packages("psych")}
+library(psych)
+if(!require(BBmisc)){install.packages("BBmisc")}
+library(BBmisc)
+if(!require(Metrics)){install.packages("Metrics")}
+library(Metrics)
+if(!require(caret)){install.packages("caret")}
+library(caret)
+if(!require(leaps)){install.packages("caret")}
+library(leaps)
+if(!require(randomForest)){install.packages("randomForest")}
+library(randomForest)
+
+housing_data <- read.csv("house_prices_training.csv",
+                         header = TRUE)
+```
+## Project Description:
+
+Housing Incorporated requires an automated appraisal system for predicting home prices based on certain attributes. Specifically those listed in the table below.
+
+This document is an outline of a prototype for an automated appraisal system developed using linear regression and the random forest data mining algorithm available in the "Random Forest Package" of the R programming language.
+
+## Step 1 Data Collection, Data exploration and Dimesion Reduction:
+
+The data used to train, test and validate the prototype was gathered from two files house_prices_training.csv consisting of 5223 obversations of 12 variables and house_prices_testing.csv consisting of 579 obversations of 12 variables. To gain better understanding of the data we're workiong with it's best to start by viewing summary statisitics and a descrpition of the attributes or "predictor variables" used.
+
+
+##  Summary Statisitics 
+
+```{r summary, eho=FALSE}
+summary(housing_data)
+```
+
+
+
+
+The next step in the development of the apraisal system prototype was to gauge the importance of each of the predictor variables and reduce the dimension of the data wherever possible.
+
+The dimensoion reduction method used for the creation of this prototype was multiple linear regression using the exhaustive search algorithm. The basic idea of this approach is to evaluate all subsets of predictor variables while measuring the variance accounted for by the regression equation (mesasured using multiple R2) as each aditional variable is added to the subset(s) being used in the seacrh. Details of which variables where added to the regression equation, the increase in variance for each additional variable and the the Mallow's CP values for each subset of predictors used during the search is given below.
+
+```{r exhaustive search "setup", echo=FALSE}
+#use linear regression exhaustive search method to
+#reduce dimension (library = leaps)
+var_search <- regsubsets(TOTAL.VALUE ~ ., data = housing_data,
+                         nbest = 1, nvmax = 14, 
+                            method = "exhaustive")
+
+#create variable to store results of exhaustoive search
+sum_var_search <- summary(var_search)
+
+
+
+```
+
+```{r exhaustive search "results", echo=TRUE}
+
+
+#print variables used in each subset
+sum_var_search$which
+
+#print AdjRsquared values for subsets 
+sum_var_search$adjr2
+
+#print Mallow's CP for subsets
+sum_var_search$cp
+
+```
+
+## Step:2 Model Development
+
+Following dimension reduction a subset of the data containing those predictors deemed most relevant was created. This subset was then partitioned into training and test sets to be used in an exploratory multiple linear regression model. The purpose of the exploratory model is to set a benchmark agaisnt which to measure the final prediction model created for this prototype. Details of the linear regression  model and prediction results are given below.
+
+```{r multiple linear regression setup, include=FALSE}
+
+
+sub_housing_data <- housing_data[,c("TOTAL.VALUE", "LOT.SQFT",
+      "YR.BUILT","GROSS.AREA","LIVING.AREA","FLOORS",
+        "FULL.BATH","HALF.BATH","KITCHEN","FIREPLACE")]
+
+
+indxTrain <- createDataPartition(y = sub_housing_data$TOTAL.VALUE,
+                                 p = 0.7,list = FALSE)
+
+training <- sub_housing_data[indxTrain,]
+testing <- sub_housing_data[-indxTrain,]
+
+
+```
+
+```{r multiple linear regression model, eho=FALSE}
+exploratory_model <- lm(TOTAL.VALUE ~ ., data = training)
+
+options(scipen=999)
+summary(exploratory_model)
+```
+
+```{r multiple linear regression model results, include=FALSE}
+# Predict the testing set`s prices with  exploratory_model
+predictions_training <- predict(exploratory_model, newdata = training)
+predictions_training
+
+# Predict the testing set`s prices with exploratory_model
+predictions_testing <- predict(exploratory_model, newdata = testing)
+predictions_testing
+
+
+
+
+
+```
+
+```{r multiple linear regression metrics, eho=TRUE}
+# compute RMSE and Pearson coefficient 
+
+# For the training set:
+rmse(training$TOTAL.VALUE, predictions_training)
+cor(training$TOTAL.VALUE, predictions_training)
+
+# For the testing set:
+rmse(testing$TOTAL.VALUE, predictions_testing)
+cor(testing$TOTAL.VALUE, predictions_testing)
+```
+
+
+After creating the exploratory model the final prediction model prototype was created using the random forest algorithm for regression provided in the "Random Forest Packeage" of the R Programming language. The random forest algorithm is meant to de-correlate trees by growing n number of trees from a training dataset and randomizing the set of variables that each tree is allowed to use. When predicting a continuous variable the average of the predicted values of all trees in the forest is used as the models final prediction. Deatils of this model and results are given below.
+
+```{r random forest setup, include=FALSE}
+# Set seed for reproducibility
+set.seed(111)
+
+### Spliting data as training and test set using sub_housing_data ##
+indxTrain <- createDataPartition(y = sub_housing_data$TOTAL.VALUE,p = 0.75,list = FALSE)
+
+training <- sub_housing_data[indxTrain,]
+testing <- sub_housing_data[-indxTrain,]
+
+
+#create random forest model for regression
+myforest <- randomForest(formula = TOTAL.VALUE ~ ., data = training, 
+                         importance = T, ntree = 200, mtry = 5)
+```
+
+```{r random forest model, echo=FALSE}
+#create random forest model for regression
+myforest <- randomForest(formula = TOTAL.VALUE ~ ., data = training, 
+                         importance = T, ntree = 200, mtry = 5)
+#print model
+myforest
+
+var_importance <- importance(myforest)
+varImpPlot(myforest, type = 1)
+```
+
+```{r random forest results testing data "setup", include=FALSE}
+#make predictions on training data using model myforest
+forest_predictions_training <- predict(myforest, newdata =training)
+
+
+#make predictions on testing data using model myforest
+forest_predictions_testing <- predict(myforest, newdata = testing)
+
+#Print RMSE and Pearson coefficient(testing)
+rmse(testing$TOTAL.VALUE, forest_predictions_testing)
+cor(testing$TOTAL.VALUE, forest_predictions_testing)
+
+```
+
+```{r random forest results training data "print", echo=TRUE}
+
+#Print RMSE and Pearson coefficient(training)
+cor(training$TOTAL.VALUE, forest_predictions_training)
+rmse(training$TOTAL.VALUE, forest_predictions_training)
+
+```
+
+```{r random forest results testing data "print", echo=TRUE}
+
+#Print RMSE and Pearson coefficient(testing)
+rmse(testing$TOTAL.VALUE, forest_predictions_testing)
+cor(testing$TOTAL.VALUE, forest_predictions_testing)
+
+
+```
+
+## Step 3: Testing
+The final step in developing the model prototype was to guage the perfomance of the model on the holdout set. Using the random forest algorithm as opposed to a simple linear regression model the root mean squared error (RMSE) was reduced by approximately 3%. Comparing the RMSE of the model's predictions to the standard deviation of the outcome variable "TOTAL.VALUE" sheds further light on the models ability to predict housing prices. Testing results are given below.
+
+```{r random forest performance on holdout set "setup", include=FALSE}
+######Load data from the holdout set#####
+housing_data_holdout <- read.csv("house_prices_testing.csv",
+                         header = TRUE)
+
+#create subset of data from the holdout set
+sub_housing_data_holdout <- housing_data_holdout[,c("TOTAL.VALUE", "LOT.SQFT",
+                                    "YR.BUILT","GROSS.AREA","LIVING.AREA","FLOORS",
+                                    "FULL.BATH","HALF.BATH","KITCHEN","FIREPLACE")]
+#verify subset was created
+head(sub_housing_data_holdout)
+
+#create predictions for holdout set
+forest_predictions_testing <- predict(myforest, 
+                          newdata = sub_housing_data_holdout)
+```
+
+```{r random forest performance on holdout set "results",echo=TRUE}
+#Pearson Coefficient
+cor(sub_housing_data_holdout$TOTAL.VALUE,
+forest_predictions_testing)
+
+#Standard Deviation TOTAL.VALUE
+sd(sub_housing_data_holdout$TOTAL.VALUE)
+
+#Root Mean Squared Error of Predictions
+rmse(sub_housing_data_holdout$TOTAL.VALUE, forest_predictions_testing)
+
+
+```
+
+
+
+
