@@ -1,0 +1,11 @@
+2020-10-31 15:55:51,973 - urllib3.connectionpool - Starting new HTTPS connection (1): archive.ics.uci.edu:443
+2020-10-31 15:56:54,084 - urllib3.connectionpool - Starting new HTTPS connection (1): archive.ics.uci.edu:443
+2020-10-31 15:56:54,315 - urllib3.connectionpool - https://archive.ics.uci.edu:443 "GET /ml/machine-learning-databases/auto-mpg/auto-mpg.data HTTP/1.1" 200 30286
+2020-10-31 16:05:58,540 - urllib3.connectionpool - Starting new HTTPS connection (1): archive.ics.uci.edu:443
+2020-10-31 16:05:58,782 - urllib3.connectionpool - https://archive.ics.uci.edu:443 "GET /ml/machine-learning-databases/auto-mpg/auto-mpg.data HTTP/1.1" 200 30286
+2020-10-31 16:08:45,646 - urllib3.connectionpool - Starting new HTTPS connection (1): archive.ics.uci.edu:443
+2020-10-31 16:08:45,863 - urllib3.connectionpool - https://archive.ics.uci.edu:443 "GET /ml/machine-learning-databases/auto-mpg/auto-mpg.data HTTP/1.1" 200 30286
+2020-10-31 16:09:28,887 - urllib3.connectionpool - Starting new HTTPS connection (1): archive.ics.uci.edu:443
+2020-10-31 16:09:29,121 - urllib3.connectionpool - https://archive.ics.uci.edu:443 "GET /ml/machine-learning-databases/auto-mpg/auto-mpg.data HTTP/1.1" 200 30286
+2020-10-31 16:10:11,117 - urllib3.connectionpool - Starting new HTTPS connection (1): archive.ics.uci.edu:443
+2020-10-31 16:10:11,346 - urllib3.connectionpool - https://archive.ics.uci.edu:443 "GET /ml/machine-learning-databases/auto-mpg/auto-mpg.data HTTP/1.1" 200 30286

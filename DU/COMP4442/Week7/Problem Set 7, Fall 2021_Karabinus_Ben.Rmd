@@ -1,0 +1,394 @@
+---
+title: "Problem Set 7, Fall 2021"
+author: "Ben Karabinus"
+output:
+    word_document: default
+    html_document: default
+    pdf_document: default
+---
+
+```{r setup, include=TRUE}
+
+# Load any packages, if any, that you use as part of your answers here
+# For example: 
+
+library(mlbench)
+library(glmnet)
+
+```
+
+CONTEXT - HOUSE VALUES IN BOSTON, CIRCA 1970
+
+This dataset was obtained through the mlbench package, which contains a subset of data sets available through the UCI Machine Learning Repository. From the help file:
+
+Housing data for 506 census tracts of Boston from the 1970 census. The dataframe BostonHousing contains the original data by Harrison and Rubinfeld (1979).
+
+The original data are 506 observations on 14 variables.
+
+Continuous variables:
+
+crim	    per capita crime rate by town 
+zn      	proportion of residential land zoned for lots over 25,000 sq.ft  
+indus   	proportion of non-retail business acres per town
+nox	      nitric oxides concentration (parts per 10 million)
+rm	      average number of rooms per dwelling
+age	      proportion of owner-occupied units built prior to 1940
+dis	      weighted distances to five Boston employment centres
+rad	      index of accessibility to radial highways
+tax	      full-value property-tax rate per USD 10,000
+ptratio	  pupil-teacher ratio by town
+b	        1000(B - 0.63)^2 where B is the proportion of blacks by town
+lstat	    percentage of lower status of the population
+medv	    median value of owner-occupied homes in USD 1000's
+
+Categorical variables: 
+
+chas	    Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+
+
+## Question 1 - 10 points
+
+The BostonHousing data is contained inside of an R package, so you'll load the data into memory a little differently than usual. Run the following code chunk, confirm that the data in loaded into memory, and ensure that your variables are of the proper type (they should be)
+
+```{r echo=TRUE}
+# load the Boston housing data
+data(BostonHousing) # loads the BostonHousing dataset into memory from the mlbench package
+# verify variable types
+str(BostonHousing)
+
+```
+
+For this question, conduct a cross-validated ridge regression. Use medv as the outcome and all of the other variables in the data set as the predictors. Do NOT split your data into training and test sets for this question; conduct the analysis on the whole data set.
+
+First, conduct the cross-validated ridge regression. Be sure to use the set.seed() provided to make your analysis reproducible (in theory).
+```{r echo=TRUE}
+
+# create the matrix of explanatory variables
+X <- model.matrix(medv ~., data=BostonHousing)
+# drop the intercept column
+X <- X[,-1]
+# create the vector of outcomes
+Y<-BostonHousing$medv
+# set seed for reproducability
+set.seed(1000)
+# create cross validated ridge regression model (alpha = 0 for ridge)
+cvfit.house.ridge <- cv.glmnet(x=X, y=Y,alpha=0)
+
+```
+
+Next, display the value for lambda.min *and* the coefficients associated with it. Make sure these are visible in your knitted document. 
+
+```{r echo=TRUE}
+
+# print the smallest lambda for the fitted model 
+cvfit.house.ridge$lambda.min
+# print coefficients associated with smallest lambda
+coef(cvfit.house.ridge, s = "lambda.min")
+
+```
+
+Finally, display the value for lambda.1se *and* the coefficients associated with it. Again, make sure these are visible in your knitted document. 
+
+```{r echo=TRUE}
+
+# print lambda with the lowest MSE 
+cvfit.house.ridge$lambda.1se
+# print coefficients computed for lambda.lse
+coef(cvfit.house.ridge, s = "lambda.1se")
+
+```
+
+## Question 2 - 10 points
+
+For this question, you will use the same outcome (medv) and the same predictors in the as in the last question, but you will instead conduct a cross-validated lasso regression. Do NOT split your data into training and test sets for this question; conduct the analysis on the whole data set.
+
+First, conduct the cross-validated lasso regression. Be sure to use the set.seed() provided to make your analysis reproducible (again, in theory).
+```{r echo=TRUE}
+
+# create the matrix of explanatory variables
+X<-model.matrix(medv~., data=BostonHousing)
+# drop the intercept column
+X <- X[,-1]
+# create the vector of outcomes
+Y<-BostonHousing$medv
+# set seed for reproducability 
+set.seed(1000)
+# create lasso regression model using k- fold cross validation
+cvfit.house.lasso <- cv.glmnet(x=X, y=Y, alpha=1)
+
+```
+
+Next, display the value for lambda.min and the coefficients associated with it. Make sure these are visible in your knitted document. 
+
+```{r echo=TRUE}
+
+# print the smallest lambda for the fitted model 
+cvfit.house.lasso$lambda.min
+# print coefficients associated with smallest lambda
+coef(cvfit.house.lasso, s = "lambda.min")
+
+```
+
+Finally, display the value for lambda.1se and the coefficients associated with it. Again, make sure these are visible in your knitted document. 
+
+```{r echo=TRUE}
+
+# print the lambda with smallest MSE  
+cvfit.house.lasso$lambda.1se
+# print coefficients associated with lambda.1se
+coef(cvfit.house.lasso, s = "lambda.1se")
+
+```
+
+## Question 3 - 5 points
+
+An important difference between ridge regression and lasso regression is that predictors can be dropped from a model in lasso but not in ridge. The number of predictors set to zero (if any) in lasso depends on the extent of the coefficient shrinkage at a given lambda. Answer the two questions below about the results of your cross-validated lasso models. 
+
+1) Among the set of coefficients associated with *lambda.min* in the cross-validated lasso regression, which predictors were set to zero? Please list them. 
+
+Your answer here:
+
+The "indus" and "age" variables were set to zero for lambda.min in the lasso regression model.
+
+2) Among the set of coefficients associated with *lambda.1se* in the cross-validated lasso regression, which predictors were set to zero? Please list them. 
+
+Your answer here:
+
+The "indus", "age", "rad" and "tax" variables were set to zero for lambda.1se in the lasso regression model.
+
+3) Which of these - lambda.min or lambda.1se - had more coefficients set to zero? 
+
+Your answer here: 
+
+Lambda.lse had more coefficients set to zero.
+
+
+
+---
+
+
+CONTEXT - NATIONAL INDONESIA CONTRACEPTIVE PRELAVENCE SURVEY (1987)
+
+This dataset was obtained from the UCI Machine Learning Repository. From the description on https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice:
+
+This dataset is a subset of the 1987 National Indonesia Contraceptive Prevalence Survey. The samples are married women who were either not pregnant or do not know if they were at the time of interview. The problem is to predict the current contraceptive method choice (no use, long-term methods, or short-term methods) of a woman based on her demographic and socio-economic characteristics.
+
+Continuous variables
+
+Wife's age (w.age) 
+Number of children ever born (children) 
+
+Categorical variables:
+
+Wife's education (w.edu) 1=low, 2, 3, 4=high 
+Husband's education (h.edu) 1=low, 2, 3, 4=high 
+Wife's religion (w.relig) 0=Non-Islam, 1=Islam 
+Wife's now working? (w.work) 0=Yes, 1=No 
+Husband's occupation (h.occ) 1, 2, 3, 4 
+Standard-of-living index (sol.index) 1=low, 2, 3, 4=high 
+Media exposure (media) 0=Good, 1=Not good 
+Contraceptive method used (contra) 1=No-use, 2=Long-term, 3=Short-term
+
+## Question 4
+
+First, load the data set into memory and change variables into their proper type. 
+
+```{r echo=TRUE}
+
+contraception <- read.csv("contra.csv", header=TRUE, sep=",")
+
+```
+
+Next, re-code the contra variable such that non-use of contraception (contra=1) is equal to zero and use of any contraception (contra=2 or 3) is equal to one. 
+
+```{r echo=TRUE}
+
+# re-code the contra variable
+contraception$contra_use <- ifelse(contraception$contra == 1, 0, 1)
+
+```
+
+Now, run the code chunk below to use the table() function to verify that your recoded variable is correct and answer the question below it. 
+
+```{r echo=TRUE}
+
+# sanity check re-coding
+table(contraception$contra)
+table(contraception$contra_use)
+
+```
+
+1) Does the number of 2's and 3's in the original contra variable match the number of 1's in your recoded outcome variable? (Hint: if not, you have a mistake in your recoding)
+
+Your answer here (yes/no): Yes 
+
+One more thing to do: your variables probably all came in as integer, but some of them are categorical variables (included your recoded outcome). Change your variables to the appropriate type
+
+```{r echo=TRUE}
+
+# change categorical variables to type factor
+contraception$w.edu <- as.factor(contraception$w.edu)
+contraception$h.edu <- as.factor(contraception$h.edu)
+contraception$w.relig <- as.factor(contraception$w.relig)
+contraception$w.work <- as.factor(contraception$w.work)
+contraception$h.occ <- as.factor(contraception$h.occ)
+contraception$sol.index <- as.factor(contraception$sol.index)
+contraception$media <- as.factor(contraception$media)
+contraception$contra_use <- as.factor(contraception$contra_use)
+# check data structure 
+str(contraception)
+
+```
+
+Now that you've recoded your outcome variable, you can now move on to the analysis!
+
+Conduct a cross-validated ridge regression. Use your recoded contraception use variable as the outcome and all of the other variables (except contra) in the data set as the predictors. Do NOT split your data into training and test sets for this question; conduct the analysis on the whole data set.
+
+First, conduct the cross-validated ridge regression. Be sure to use the set.seed() provided to make your analysis reproducible.
+```{r echo=TRUE}
+
+# drop contra predictor
+contra.dat <- contraception[,-10]
+# create the matrix of explanatory variables
+X <- model.matrix(contra_use ~., data=contra.dat)
+# drop the intercept column
+X <- X[,-1]
+# create the vector of outcomes
+Y <- contra.dat$contra_use
+# set seed for reproducability
+set.seed(1000)
+# create ridge regression model (alpha = 0, family = binomial)
+cvfit.contra.ridge <- cv.glmnet(x=X, y=Y,alpha=0, family = 'binomial')
+
+```
+
+Next, display the value for lambda.min and the coefficients associated with it. Make sure these are visible in your knitted document. 
+
+```{r echo=TRUE}
+
+# print the smallest lambda for the fitted model 
+cvfit.contra.ridge$lambda.min
+# print coefficients associated with smallest lambda
+coef(cvfit.contra.ridge, s = "lambda.min")
+
+```
+
+Finally, display the value for lambda.1se and the coefficients associated with it. Again, make sure these are visible in your knitted document. 
+
+```{r echo=TRUE}
+
+# print the smallest lambda for the fitted model 
+cvfit.contra.ridge$lambda.1se
+# print coefficients associated with smallest lambda
+coef(cvfit.contra.ridge, s = "lambda.1se")
+
+```
+
+
+## Question 5
+
+For this question, you will use the same outcome (your binary contraception use variable) and the same predictors in the as in the last question, but you will instead conduct a cross-validated lasso regression. Do NOT split your data into training and test sets for this question; conduct the analysis on the whole data set.
+
+First, conduct the cross-validated lasso regression and display the output the function produces. Be sure to use the set.seed() provided to make your analysis reproducible.
+```{r echo=TRUE}
+
+# drop contra predictor
+contra.dat <- contraception[,-10]
+# create the matrix of explanatory variables
+X <- model.matrix(contra_use ~., data=contra.dat)
+# drop the intercept column
+X <- X[,-1]
+# create the vector of outcomes
+Y <- contra.dat$contra_use
+# set seed for reproducibality
+set.seed(1000)
+# create lasso regression model (alpha = 1, family = binomial)
+cvfit.contra.lasso <- cv.glmnet(x=X, y=Y,alpha=1, family = 'binomial')
+
+```
+
+Next, display the value for lambda.min and the coefficients associated with it. Make sure these are visible in your knitted document. 
+
+```{r echo=TRUE}
+
+# print the smallest lambda for the fitted model 
+cvfit.contra.lasso$lambda.min
+# print coefficients associated with smallest lambda
+coef(cvfit.contra.lasso, s = "lambda.min")
+
+
+```
+
+Finally, display the value for lambda.1se and the coefficients associated with it. Again, make sure these are visible in your knitted document. 
+
+```{r echo=TRUE}
+
+# print the smallest lambda for the fitted model 
+cvfit.contra.lasso$lambda.1se
+# print coefficients associated with smallest lambda
+coef(cvfit.contra.lasso, s = "lambda.1se")
+
+```
+
+
+
+
+
+## Question 6 - 5 points
+
+Answer the two questions below about the results of your cross-validated lasso models for the contraception data. 
+1) Among the set of coefficients associated with lambda.min in the cross-validated lasso regression, which predictors were set to zero? Please list them. 
+
+Your answer here:
+
+The "h.edu2" and "h.edu4" variables were set to zero for lambda.min in the lasso regression model.
+
+2) Among the set of coefficients associated with lambda.1se in the cross-validated lasso regression, which predictors were set to zero? Please list them. 
+
+Your answer here:
+
+The "w.edu2", "h.edu2","h.edu3", "h.edu4", "w.work1", "h.occ3", "h.occ4", "Sol.index2", "sol.index3" variables were set to zero for lambda.lse in the lasso regression model.
+
+3) Which of these - lambda.min or lambda.1se - had more coefficients set to zero? 
+
+Your answer here: 
+
+lambda.1se had more coefficients set to zero for the cvfit.contra.lasso regression model.
+
+
+# Extra credit opportunity! 
+
+Now that you're done, I want to check a few things about your R session. Please be sure that you have the glmnet package loaded before completing this step. 
+
+```{r echo=TRUE}
+
+# Install and load the rstudioapi package
+
+# install.packages("rstudioapi")
+library(rstudioapi)
+
+```
+
+Run the following code chunks and make sure the output displays in your knitted document. If your knitted document contains these three things, I will award you one extra credit point for this assignment (max 50 points for this assignment). 
+
+## Version of R
+```{r echo=TRUE}
+
+R.Version() # base function that outputs current R version
+
+```
+
+## Version of RStudio
+```{r echo=TRUE}
+
+versionInfo() # rstudioapi function that outputs current RStudio version
+
+```
+
+## Version of glmnet
+```{r echo=TRUE}
+
+packageVersion("glmnet") # base function that outputs current package version
+
+```
+

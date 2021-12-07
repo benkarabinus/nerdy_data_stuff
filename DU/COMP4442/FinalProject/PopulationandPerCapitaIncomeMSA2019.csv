@@ -1,0 +1,782 @@
+GeoFips,GeoName,LineCode,Description,2019
+998,United States (Metropolitan Portion),2,Population (persons) 1/,282828601
+998,United States (Metropolitan Portion),3,Per capita personal income (dollars) 2/,58650
+10180,"Abilene, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,172060
+10180,"Abilene, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45552
+10420,"Akron, OH (Metropolitan Statistical Area)",2,Population (persons) 1/,703479
+10420,"Akron, OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51095
+10500,"Albany, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,146726
+10500,"Albany, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39922
+10540,"Albany-Lebanon, OR (Metropolitan Statistical Area)",2,Population (persons) 1/,129749
+10540,"Albany-Lebanon, OR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44830
+10580,"Albany-Schenectady-Troy, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,880381
+10580,"Albany-Schenectady-Troy, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,60767
+10740,"Albuquerque, NM (Metropolitan Statistical Area) *",2,Population (persons) 1/,918018
+10740,"Albuquerque, NM (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,43986
+10780,"Alexandria, LA (Metropolitan Statistical Area)",2,Population (persons) 1/,152037
+10780,"Alexandria, LA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44446
+10900,"Allentown-Bethlehem-Easton, PA-NJ (Metropolitan Statistical Area)",2,Population (persons) 1/,844052
+10900,"Allentown-Bethlehem-Easton, PA-NJ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55675
+11020,"Altoona, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,121829
+11020,"Altoona, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48277
+11100,"Amarillo, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,265053
+11100,"Amarillo, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48065
+11180,"Ames, IA (Metropolitan Statistical Area)",2,Population (persons) 1/,123351
+11180,"Ames, IA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44952
+11260,"Anchorage, AK (Metropolitan Statistical Area)",2,Population (persons) 1/,396317
+11260,"Anchorage, AK (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,64350
+11460,"Ann Arbor, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,367601
+11460,"Ann Arbor, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,60843
+11500,"Anniston-Oxford, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,113605
+11500,"Anniston-Oxford, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38394
+11540,"Appleton, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,237974
+11540,"Appleton, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52686
+11700,"Asheville, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,462680
+11700,"Asheville, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47432
+12020,"Athens-Clarke County, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,213750
+12020,"Athens-Clarke County, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41495
+12060,"Atlanta-Sandy Springs-Alpharetta, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,6020364
+12060,"Atlanta-Sandy Springs-Alpharetta, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54557
+12100,"Atlantic City-Hammonton, NJ (Metropolitan Statistical Area)",2,Population (persons) 1/,263670
+12100,"Atlantic City-Hammonton, NJ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,50631
+12220,"Auburn-Opelika, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,164542
+12220,"Auburn-Opelika, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39781
+12260,"Augusta-Richmond County, GA-SC (Metropolitan Statistical Area)",2,Population (persons) 1/,608980
+12260,"Augusta-Richmond County, GA-SC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43638
+12420,"Austin-Round Rock-Georgetown, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,2227083
+12420,"Austin-Round Rock-Georgetown, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,61977
+12540,"Bakersfield, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,900202
+12540,"Bakersfield, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41843
+12580,"Baltimore-Columbia-Towson, MD (Metropolitan Statistical Area)",2,Population (persons) 1/,2800053
+12580,"Baltimore-Columbia-Towson, MD (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,63988
+12620,"Bangor, ME (Metropolitan Statistical Area)",2,Population (persons) 1/,152148
+12620,"Bangor, ME (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43136
+12700,"Barnstable Town, MA (Metropolitan Statistical Area)",2,Population (persons) 1/,212990
+12700,"Barnstable Town, MA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,77435
+12940,"Baton Rouge, LA (Metropolitan Statistical Area)",2,Population (persons) 1/,854884
+12940,"Baton Rouge, LA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49439
+12980,"Battle Creek, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,134159
+12980,"Battle Creek, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40257
+13020,"Bay City, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,103126
+13020,"Bay City, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43657
+13140,"Beaumont-Port Arthur, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,392563
+13140,"Beaumont-Port Arthur, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45219
+13220,"Beckley, WV (Metropolitan Statistical Area)",2,Population (persons) 1/,115767
+13220,"Beckley, WV (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41128
+13380,"Bellingham, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,229247
+13380,"Bellingham, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,50915
+13460,"Bend, OR (Metropolitan Statistical Area)",2,Population (persons) 1/,197692
+13460,"Bend, OR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,56447
+13740,"Billings, MT (Metropolitan Statistical Area)",2,Population (persons) 1/,181667
+13740,"Billings, MT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53960
+13780,"Binghamton, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,238691
+13780,"Binghamton, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46484
+13820,"Birmingham-Hoover, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,1090435
+13820,"Birmingham-Hoover, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53374
+13900,"Bismarck, ND (Metropolitan Statistical Area)",2,Population (persons) 1/,128949
+13900,"Bismarck, ND (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58254
+13980,"Blacksburg-Christiansburg, VA (Metropolitan Statistical Area) *",2,Population (persons) 1/,167531
+13980,"Blacksburg-Christiansburg, VA (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,39517
+14010,"Bloomington, IL (Metropolitan Statistical Area)",2,Population (persons) 1/,171517
+14010,"Bloomington, IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49602
+14020,"Bloomington, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,169230
+14020,"Bloomington, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43411
+14100,"Bloomsburg-Berwick, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,83194
+14100,"Bloomsburg-Berwick, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47097
+14260,"Boise City, ID (Metropolitan Statistical Area)",2,Population (persons) 1/,749202
+14260,"Boise City, ID (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47881
+14460,"Boston-Cambridge-Newton, MA-NH (Metropolitan Statistical Area)",2,Population (persons) 1/,4873019
+14460,"Boston-Cambridge-Newton, MA-NH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,81498
+14500,"Boulder, CO (Metropolitan Statistical Area) *",2,Population (persons) 1/,326196
+14500,"Boulder, CO (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,76527
+14540,"Bowling Green, KY (Metropolitan Statistical Area)",2,Population (persons) 1/,179240
+14540,"Bowling Green, KY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,37114
+14740,"Bremerton-Silverdale-Port Orchard, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,271473
+14740,"Bremerton-Silverdale-Port Orchard, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58874
+14860,"Bridgeport-Stamford-Norwalk, CT (Metropolitan Statistical Area)",2,Population (persons) 1/,943332
+14860,"Bridgeport-Stamford-Norwalk, CT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,121397
+15180,"Brownsville-Harlingen, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,423163
+15180,"Brownsville-Harlingen, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,29928
+15260,"Brunswick, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,118779
+15260,"Brunswick, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42885
+15380,"Buffalo-Cheektowaga, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,1127983
+15380,"Buffalo-Cheektowaga, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52331
+15500,"Burlington, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,169509
+15500,"Burlington, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41193
+15540,"Burlington-South Burlington, VT (Metropolitan Statistical Area)",2,Population (persons) 1/,220411
+15540,"Burlington-South Burlington, VT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58662
+15680,"California-Lexington Park, MD (Metropolitan Statistical Area)",2,Population (persons) 1/,113510
+15680,"California-Lexington Park, MD (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58582
+15940,"Canton-Massillon, OH (Metropolitan Statistical Area)",2,Population (persons) 1/,397520
+15940,"Canton-Massillon, OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46061
+15980,"Cape Coral-Fort Myers, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,770577
+15980,"Cape Coral-Fort Myers, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52064
+16020,"Cape Girardeau, MO-IL (Metropolitan Statistical Area)",2,Population (persons) 1/,96765
+16020,"Cape Girardeau, MO-IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44571
+16060,"Carbondale-Marion, IL (Metropolitan Statistical Area)",2,Population (persons) 1/,135764
+16060,"Carbondale-Marion, IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41733
+16180,"Carson City, NV (Metropolitan Statistical Area)",2,Population (persons) 1/,55916
+16180,"Carson City, NV (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52470
+16220,"Casper, WY (Metropolitan Statistical Area)",2,Population (persons) 1/,79858
+16220,"Casper, WY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,72187
+16300,"Cedar Rapids, IA (Metropolitan Statistical Area)",2,Population (persons) 1/,273032
+16300,"Cedar Rapids, IA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53143
+16540,"Chambersburg-Waynesboro, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,155027
+16540,"Chambersburg-Waynesboro, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47934
+16580,"Champaign-Urbana, IL (Metropolitan Statistical Area)",2,Population (persons) 1/,226033
+16580,"Champaign-Urbana, IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46616
+16620,"Charleston, WV (Metropolitan Statistical Area)",2,Population (persons) 1/,257074
+16620,"Charleston, WV (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45276
+16700,"Charleston-North Charleston, SC (Metropolitan Statistical Area)",2,Population (persons) 1/,802122
+16700,"Charleston-North Charleston, SC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53119
+16740,"Charlotte-Concord-Gastonia, NC-SC (Metropolitan Statistical Area)",2,Population (persons) 1/,2636883
+16740,"Charlotte-Concord-Gastonia, NC-SC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53916
+16820,"Charlottesville, VA (Metropolitan Statistical Area) *",2,Population (persons) 1/,218615
+16820,"Charlottesville, VA (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,69003
+16860,"Chattanooga, TN-GA (Metropolitan Statistical Area)",2,Population (persons) 1/,565194
+16860,"Chattanooga, TN-GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47376
+16940,"Cheyenne, WY (Metropolitan Statistical Area)",2,Population (persons) 1/,99500
+16940,"Cheyenne, WY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54113
+16980,"Chicago-Naperville-Elgin, IL-IN-WI (Metropolitan Statistical Area)",2,Population (persons) 1/,9458539
+16980,"Chicago-Naperville-Elgin, IL-IN-WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,63500
+17020,"Chico, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,219186
+17020,"Chico, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47860
+17140,"Cincinnati, OH-KY-IN (Metropolitan Statistical Area)",2,Population (persons) 1/,2221208
+17140,"Cincinnati, OH-KY-IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,56033
+17300,"Clarksville, TN-KY (Metropolitan Statistical Area)",2,Population (persons) 1/,307820
+17300,"Clarksville, TN-KY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41881
+17420,"Cleveland, TN (Metropolitan Statistical Area)",2,Population (persons) 1/,124942
+17420,"Cleveland, TN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39839
+17460,"Cleveland-Elyria, OH (Metropolitan Statistical Area)",2,Population (persons) 1/,2048449
+17460,"Cleveland-Elyria, OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55451
+17660,"Coeur d'Alene, ID (Metropolitan Statistical Area)",2,Population (persons) 1/,165697
+17660,"Coeur d'Alene, ID (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46645
+17780,"College Station-Bryan, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,264728
+17780,"College Station-Bryan, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41742
+17820,"Colorado Springs, CO (Metropolitan Statistical Area)",2,Population (persons) 1/,745791
+17820,"Colorado Springs, CO (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51120
+17860,"Columbia, MO (Metropolitan Statistical Area)",2,Population (persons) 1/,208173
+17860,"Columbia, MO (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47482
+17900,"Columbia, SC (Metropolitan Statistical Area)",2,Population (persons) 1/,838433
+17900,"Columbia, SC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46523
+17980,"Columbus, GA-AL (Metropolitan Statistical Area)",2,Population (persons) 1/,321048
+17980,"Columbus, GA-AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42183
+18020,"Columbus, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,83779
+18020,"Columbus, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52546
+18140,"Columbus, OH (Metropolitan Statistical Area)",2,Population (persons) 1/,2122271
+18140,"Columbus, OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52477
+18580,"Corpus Christi, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,429024
+18580,"Corpus Christi, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45140
+18700,"Corvallis, OR (Metropolitan Statistical Area)",2,Population (persons) 1/,93053
+18700,"Corvallis, OR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48725
+18880,"Crestview-Fort Walton Beach-Destin, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,284809
+18880,"Crestview-Fort Walton Beach-Destin, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54270
+19060,"Cumberland, MD-WV (Metropolitan Statistical Area)",2,Population (persons) 1/,97284
+19060,"Cumberland, MD-WV (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41195
+19100,"Dallas-Fort Worth-Arlington, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,7573136
+19100,"Dallas-Fort Worth-Arlington, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58725
+19140,"Dalton, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,144724
+19140,"Dalton, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,37444
+19180,"Danville, IL (Metropolitan Statistical Area)",2,Population (persons) 1/,75758
+19180,"Danville, IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40109
+19300,"Daphne-Fairhope-Foley, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,223234
+19300,"Daphne-Fairhope-Foley, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47485
+19340,"Davenport-Moline-Rock Island, IA-IL (Metropolitan Statistical Area)",2,Population (persons) 1/,379172
+19340,"Davenport-Moline-Rock Island, IA-IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,50502
+19430,"Dayton-Kettering, OH (Metropolitan Statistical Area)",2,Population (persons) 1/,807611
+19430,"Dayton-Kettering, OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49161
+19460,"Decatur, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,152603
+19460,"Decatur, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40295
+19500,"Decatur, IL (Metropolitan Statistical Area)",2,Population (persons) 1/,104009
+19500,"Decatur, IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48764
+19660,"Deltona-Daytona Beach-Ormond Beach, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,668365
+19660,"Deltona-Daytona Beach-Ormond Beach, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44762
+19740,"Denver-Aurora-Lakewood, CO (Metropolitan Statistical Area) *",2,Population (persons) 1/,2967239
+19740,"Denver-Aurora-Lakewood, CO (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,67236
+19780,"Des Moines-West Des Moines, IA (Metropolitan Statistical Area)",2,Population (persons) 1/,699292
+19780,"Des Moines-West Des Moines, IA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55039
+19820,"Detroit-Warren-Dearborn, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,4319629
+19820,"Detroit-Warren-Dearborn, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54172
+20020,"Dothan, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,149358
+20020,"Dothan, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43143
+20100,"Dover, DE (Metropolitan Statistical Area)",2,Population (persons) 1/,180786
+20100,"Dover, DE (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43097
+20220,"Dubuque, IA (Metropolitan Statistical Area)",2,Population (persons) 1/,97311
+20220,"Dubuque, IA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51525
+20260,"Duluth, MN-WI (Metropolitan Statistical Area)",2,Population (persons) 1/,288732
+20260,"Duluth, MN-WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47654
+20500,"Durham-Chapel Hill, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,644367
+20500,"Durham-Chapel Hill, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54423
+20700,"East Stroudsburg, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,170271
+20700,"East Stroudsburg, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43823
+20740,"Eau Claire, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,169304
+20740,"Eau Claire, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48956
+20940,"El Centro, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,181215
+20940,"El Centro, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40447
+21060,"Elizabethtown-Fort Knox, KY (Metropolitan Statistical Area)",2,Population (persons) 1/,153928
+21060,"Elizabethtown-Fort Knox, KY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43076
+21140,"Elkhart-Goshen, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,206341
+21140,"Elkhart-Goshen, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46975
+21300,"Elmira, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,83456
+21300,"Elmira, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46421
+21340,"El Paso, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,844124
+21340,"El Paso, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,37633
+21420,"Enid, OK (Metropolitan Statistical Area)",2,Population (persons) 1/,61056
+21420,"Enid, OK (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44899
+21500,"Erie, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,269728
+21500,"Erie, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46379
+21660,"Eugene-Springfield, OR (Metropolitan Statistical Area)",2,Population (persons) 1/,382067
+21660,"Eugene-Springfield, OR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47340
+21780,"Evansville, IN-KY (Metropolitan Statistical Area)",2,Population (persons) 1/,315086
+21780,"Evansville, IN-KY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48896
+21820,"Fairbanks, AK (Metropolitan Statistical Area) *",2,Population (persons) 1/,96849
+21820,"Fairbanks, AK (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,59958
+22020,"Fargo, ND-MN (Metropolitan Statistical Area)",2,Population (persons) 1/,246145
+22020,"Fargo, ND-MN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54932
+22140,"Farmington, NM (Metropolitan Statistical Area)",2,Population (persons) 1/,123958
+22140,"Farmington, NM (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,35999
+22180,"Fayetteville, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,526719
+22180,"Fayetteville, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38204
+22220,"Fayetteville-Springdale-Rogers, AR (Metropolitan Statistical Area)",2,Population (persons) 1/,534904
+22220,"Fayetteville-Springdale-Rogers, AR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,67771
+22380,"Flagstaff, AZ (Metropolitan Statistical Area)",2,Population (persons) 1/,143476
+22380,"Flagstaff, AZ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49189
+22420,"Flint, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,405813
+22420,"Flint, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41929
+22500,"Florence, SC (Metropolitan Statistical Area)",2,Population (persons) 1/,204911
+22500,"Florence, SC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42439
+22520,"Florence-Muscle Shoals, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,147970
+22520,"Florence-Muscle Shoals, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39102
+22540,"Fond du Lac, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,103403
+22540,"Fond du Lac, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49949
+22660,"Fort Collins, CO (Metropolitan Statistical Area)",2,Population (persons) 1/,356899
+22660,"Fort Collins, CO (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55884
+22900,"Fort Smith, AR-OK (Metropolitan Statistical Area)",2,Population (persons) 1/,250368
+22900,"Fort Smith, AR-OK (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38382
+23060,"Fort Wayne, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,413263
+23060,"Fort Wayne, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47516
+23420,"Fresno, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,999101
+23420,"Fresno, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45487
+23460,"Gadsden, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,102268
+23460,"Gadsden, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38326
+23540,"Gainesville, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,329128
+23540,"Gainesville, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44880
+23580,"Gainesville, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,204441
+23580,"Gainesville, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45576
+23900,"Gettysburg, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,103009
+23900,"Gettysburg, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,50182
+24020,"Glens Falls, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,125148
+24020,"Glens Falls, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48823
+24140,"Goldsboro, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,123131
+24140,"Goldsboro, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39894
+24220,"Grand Forks, ND-MN (Metropolitan Statistical Area)",2,Population (persons) 1/,100815
+24220,"Grand Forks, ND-MN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51950
+24260,"Grand Island, NE (Metropolitan Statistical Area)",2,Population (persons) 1/,75553
+24260,"Grand Island, NE (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45487
+24300,"Grand Junction, CO (Metropolitan Statistical Area)",2,Population (persons) 1/,154210
+24300,"Grand Junction, CO (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46719
+24340,"Grand Rapids-Kentwood, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,1077370
+24340,"Grand Rapids-Kentwood, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,50330
+24420,"Grants Pass, OR (Metropolitan Statistical Area)",2,Population (persons) 1/,87487
+24420,"Grants Pass, OR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43554
+24500,"Great Falls, MT (Metropolitan Statistical Area)",2,Population (persons) 1/,81366
+24500,"Great Falls, MT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49803
+24540,"Greeley, CO (Metropolitan Statistical Area) *",2,Population (persons) 1/,324492
+24540,"Greeley, CO (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,50198
+24580,"Green Bay, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,322906
+24580,"Green Bay, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52981
+24660,"Greensboro-High Point, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,771851
+24660,"Greensboro-High Point, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44859
+24780,"Greenville, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,180742
+24780,"Greenville, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43325
+24860,"Greenville-Anderson, SC (Metropolitan Statistical Area)",2,Population (persons) 1/,920477
+24860,"Greenville-Anderson, SC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45436
+25060,"Gulfport-Biloxi, MS (Metropolitan Statistical Area)",2,Population (persons) 1/,417665
+25060,"Gulfport-Biloxi, MS (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,37792
+25180,"Hagerstown-Martinsburg, MD-WV (Metropolitan Statistical Area)",2,Population (persons) 1/,288104
+25180,"Hagerstown-Martinsburg, MD-WV (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45281
+25220,"Hammond, LA (Metropolitan Statistical Area)",2,Population (persons) 1/,134758
+25220,"Hammond, LA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38800
+25260,"Hanford-Corcoran, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,152940
+25260,"Hanford-Corcoran, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39433
+25420,"Harrisburg-Carlisle, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,577941
+25420,"Harrisburg-Carlisle, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53871
+25500,"Harrisonburg, VA (Metropolitan Statistical Area) *",2,Population (persons) 1/,134964
+25500,"Harrisonburg, VA (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,41312
+25540,"Hartford-East Hartford-Middletown, CT (Metropolitan Statistical Area)",2,Population (persons) 1/,1204877
+25540,"Hartford-East Hartford-Middletown, CT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,65132
+25620,"Hattiesburg, MS (Metropolitan Statistical Area)",2,Population (persons) 1/,168849
+25620,"Hattiesburg, MS (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39018
+25860,"Hickory-Lenoir-Morganton, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,369711
+25860,"Hickory-Lenoir-Morganton, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40826
+25940,"Hilton Head Island-Bluffton, SC (Metropolitan Statistical Area)",2,Population (persons) 1/,222195
+25940,"Hilton Head Island-Bluffton, SC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55551
+25980,"Hinesville, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,80994
+25980,"Hinesville, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,34962
+26140,"Homosassa Springs, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,149657
+26140,"Homosassa Springs, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39055
+26300,"Hot Springs, AR (Metropolitan Statistical Area)",2,Population (persons) 1/,99386
+26300,"Hot Springs, AR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41069
+26380,"Houma-Thibodaux, LA (Metropolitan Statistical Area)",2,Population (persons) 1/,208075
+26380,"Houma-Thibodaux, LA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43927
+26420,"Houston-The Woodlands-Sugar Land, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,7066141
+26420,"Houston-The Woodlands-Sugar Land, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58890
+26580,"Huntington-Ashland, WV-KY-OH (Metropolitan Statistical Area)",2,Population (persons) 1/,355873
+26580,"Huntington-Ashland, WV-KY-OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41368
+26620,"Huntsville, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,471824
+26620,"Huntsville, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52110
+26820,"Idaho Falls, ID (Metropolitan Statistical Area)",2,Population (persons) 1/,151530
+26820,"Idaho Falls, ID (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47443
+26900,"Indianapolis-Carmel-Anderson, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,2074537
+26900,"Indianapolis-Carmel-Anderson, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,56360
+26980,"Iowa City, IA (Metropolitan Statistical Area)",2,Population (persons) 1/,173105
+26980,"Iowa City, IA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55834
+27060,"Ithaca, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,102180
+27060,"Ithaca, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46496
+27100,"Jackson, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,158510
+27100,"Jackson, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40387
+27140,"Jackson, MS (Metropolitan Statistical Area)",2,Population (persons) 1/,594806
+27140,"Jackson, MS (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44734
+27180,"Jackson, TN (Metropolitan Statistical Area)",2,Population (persons) 1/,178644
+27180,"Jackson, TN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41794
+27260,"Jacksonville, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,1559514
+27260,"Jacksonville, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51421
+27340,"Jacksonville, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,197938
+27340,"Jacksonville, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47525
+27500,"Janesville-Beloit, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,163354
+27500,"Janesville-Beloit, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46236
+27620,"Jefferson City, MO (Metropolitan Statistical Area)",2,Population (persons) 1/,151235
+27620,"Jefferson City, MO (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44141
+27740,"Johnson City, TN (Metropolitan Statistical Area)",2,Population (persons) 1/,203649
+27740,"Johnson City, TN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41209
+27780,"Johnstown, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,130192
+27780,"Johnstown, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45107
+27860,"Jonesboro, AR (Metropolitan Statistical Area)",2,Population (persons) 1/,133860
+27860,"Jonesboro, AR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38122
+27900,"Joplin, MO (Metropolitan Statistical Area)",2,Population (persons) 1/,179564
+27900,"Joplin, MO (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41423
+27980,"Kahului-Wailuku-Lahaina, HI (Metropolitan Statistical Area)",2,Population (persons) 1/,167503
+27980,"Kahului-Wailuku-Lahaina, HI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51348
+28020,"Kalamazoo-Portage, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,265066
+28020,"Kalamazoo-Portage, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49493
+28100,"Kankakee, IL (Metropolitan Statistical Area)",2,Population (persons) 1/,109862
+28100,"Kankakee, IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42687
+28140,"Kansas City, MO-KS (Metropolitan Statistical Area)",2,Population (persons) 1/,2157990
+28140,"Kansas City, MO-KS (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55009
+28420,"Kennewick-Richland, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,299612
+28420,"Kennewick-Richland, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46231
+28660,"Killeen-Temple, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,460303
+28660,"Killeen-Temple, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42855
+28700,"Kingsport-Bristol, TN-VA (Metropolitan Statistical Area) *",2,Population (persons) 1/,307202
+28700,"Kingsport-Bristol, TN-VA (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,40918
+28740,"Kingston, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,177573
+28740,"Kingston, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53006
+28940,"Knoxville, TN (Metropolitan Statistical Area)",2,Population (persons) 1/,869046
+28940,"Knoxville, TN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47550
+29020,"Kokomo, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,82544
+29020,"Kokomo, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42911
+29100,"La Crosse-Onalaska, WI-MN (Metropolitan Statistical Area)",2,Population (persons) 1/,136616
+29100,"La Crosse-Onalaska, WI-MN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52035
+29180,"Lafayette, LA (Metropolitan Statistical Area)",2,Population (persons) 1/,489207
+29180,"Lafayette, LA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44512
+29200,"Lafayette-West Lafayette, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,233002
+29200,"Lafayette-West Lafayette, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40164
+29340,"Lake Charles, LA (Metropolitan Statistical Area)",2,Population (persons) 1/,210409
+29340,"Lake Charles, LA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49642
+29420,"Lake Havasu City-Kingman, AZ (Metropolitan Statistical Area)",2,Population (persons) 1/,212181
+29420,"Lake Havasu City-Kingman, AZ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,34393
+29460,"Lakeland-Winter Haven, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,724777
+29460,"Lakeland-Winter Haven, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,36649
+29540,"Lancaster, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,545724
+29540,"Lancaster, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54314
+29620,"Lansing-East Lansing, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,550391
+29620,"Lansing-East Lansing, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42495
+29700,"Laredo, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,276652
+29700,"Laredo, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,32466
+29740,"Las Cruces, NM (Metropolitan Statistical Area)",2,Population (persons) 1/,218195
+29740,"Las Cruces, NM (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,37756
+29820,"Las Vegas-Henderson-Paradise, NV (Metropolitan Statistical Area)",2,Population (persons) 1/,2266715
+29820,"Las Vegas-Henderson-Paradise, NV (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48806
+29940,"Lawrence, KS (Metropolitan Statistical Area)",2,Population (persons) 1/,122259
+29940,"Lawrence, KS (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45163
+30020,"Lawton, OK (Metropolitan Statistical Area)",2,Population (persons) 1/,126415
+30020,"Lawton, OK (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42692
+30140,"Lebanon, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,141793
+30140,"Lebanon, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48924
+30300,"Lewiston, ID-WA (Metropolitan Statistical Area)",2,Population (persons) 1/,62990
+30300,"Lewiston, ID-WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47650
+30340,"Lewiston-Auburn, ME (Metropolitan Statistical Area)",2,Population (persons) 1/,108277
+30340,"Lewiston-Auburn, ME (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42968
+30460,"Lexington-Fayette, KY (Metropolitan Statistical Area)",2,Population (persons) 1/,517056
+30460,"Lexington-Fayette, KY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49606
+30620,"Lima, OH (Metropolitan Statistical Area)",2,Population (persons) 1/,102351
+30620,"Lima, OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43788
+30700,"Lincoln, NE (Metropolitan Statistical Area)",2,Population (persons) 1/,336374
+30700,"Lincoln, NE (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,50833
+30780,"Little Rock-North Little Rock-Conway, AR (Metropolitan Statistical Area)",2,Population (persons) 1/,742384
+30780,"Little Rock-North Little Rock-Conway, AR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46560
+30860,"Logan, UT-ID (Metropolitan Statistical Area)",2,Population (persons) 1/,142165
+30860,"Logan, UT-ID (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41370
+30980,"Longview, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,286657
+30980,"Longview, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42953
+31020,"Longview, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,110593
+31020,"Longview, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46503
+31080,"Los Angeles-Long Beach-Anaheim, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,13214799
+31080,"Los Angeles-Long Beach-Anaheim, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,66684
+31140,"Louisville/Jefferson County, KY-IN (Metropolitan Statistical Area)",2,Population (persons) 1/,1265108
+31140,"Louisville/Jefferson County, KY-IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52134
+31180,"Lubbock, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,322257
+31180,"Lubbock, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44169
+31340,"Lynchburg, VA (Metropolitan Statistical Area) *",2,Population (persons) 1/,263566
+31340,"Lynchburg, VA (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,41265
+31420,"Macon-Bibb County, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,229996
+31420,"Macon-Bibb County, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42191
+31460,"Madera, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,157327
+31460,"Madera, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41267
+31540,"Madison, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,664865
+31540,"Madison, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,62087
+31700,"Manchester-Nashua, NH (Metropolitan Statistical Area)",2,Population (persons) 1/,417025
+31700,"Manchester-Nashua, NH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,63218
+31740,"Manhattan, KS (Metropolitan Statistical Area)",2,Population (persons) 1/,130285
+31740,"Manhattan, KS (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47072
+31860,"Mankato, MN (Metropolitan Statistical Area)",2,Population (persons) 1/,101927
+31860,"Mankato, MN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48219
+31900,"Mansfield, OH (Metropolitan Statistical Area)",2,Population (persons) 1/,121154
+31900,"Mansfield, OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40507
+32580,"McAllen-Edinburg-Mission, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,868707
+32580,"McAllen-Edinburg-Mission, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,27415
+32780,"Medford, OR (Metropolitan Statistical Area)",2,Population (persons) 1/,220944
+32780,"Medford, OR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48291
+32820,"Memphis, TN-MS-AR (Metropolitan Statistical Area)",2,Population (persons) 1/,1346045
+32820,"Memphis, TN-MS-AR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47985
+32900,"Merced, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,277680
+32900,"Merced, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41077
+33100,"Miami-Fort Lauderdale-Pompano Beach, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,6166488
+33100,"Miami-Fort Lauderdale-Pompano Beach, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,60966
+33140,"Michigan City-La Porte, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,109888
+33140,"Michigan City-La Porte, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43910
+33220,"Midland, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,83156
+33220,"Midland, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55972
+33260,"Midland, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,182603
+33260,"Midland, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,128766
+33340,"Milwaukee-Waukesha, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,1575179
+33340,"Milwaukee-Waukesha, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58457
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI (Metropolitan Statistical Area)",2,Population (persons) 1/,3640043
+33460,"Minneapolis-St. Paul-Bloomington, MN-WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,64255
+33540,"Missoula, MT (Metropolitan Statistical Area)",2,Population (persons) 1/,119600
+33540,"Missoula, MT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51090
+33660,"Mobile, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,429536
+33660,"Mobile, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40025
+33700,"Modesto, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,550660
+33700,"Modesto, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45742
+33740,"Monroe, LA (Metropolitan Statistical Area)",2,Population (persons) 1/,200261
+33740,"Monroe, LA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41825
+33780,"Monroe, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,150500
+33780,"Monroe, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48581
+33860,"Montgomery, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,373290
+33860,"Montgomery, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44870
+34060,"Morgantown, WV (Metropolitan Statistical Area)",2,Population (persons) 1/,139044
+34060,"Morgantown, WV (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44458
+34100,"Morristown, TN (Metropolitan Statistical Area)",2,Population (persons) 1/,142749
+34100,"Morristown, TN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,37452
+34580,"Mount Vernon-Anacortes, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,129205
+34580,"Mount Vernon-Anacortes, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54505
+34620,"Muncie, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,114135
+34620,"Muncie, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38129
+34740,"Muskegon, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,173566
+34740,"Muskegon, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39637
+34820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC (Metropolitan Statistical Area)",2,Population (persons) 1/,496901
+34820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40494
+34900,"Napa, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,137744
+34900,"Napa, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,75717
+34940,"Naples-Marco Island, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,384902
+34940,"Naples-Marco Island, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,99382
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN (Metropolitan Statistical Area)",2,Population (persons) 1/,1934317
+34980,"Nashville-Davidson--Murfreesboro--Franklin, TN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,60680
+35100,"New Bern, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,124284
+35100,"New Bern, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45788
+35300,"New Haven-Milford, CT (Metropolitan Statistical Area)",2,Population (persons) 1/,854757
+35300,"New Haven-Milford, CT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,57748
+35380,"New Orleans-Metairie, LA (Metropolitan Statistical Area)",2,Population (persons) 1/,1270530
+35380,"New Orleans-Metairie, LA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54363
+35620,"New York-Newark-Jersey City, NY-NJ-PA (Metropolitan Statistical Area)",2,Population (persons) 1/,19216182
+35620,"New York-Newark-Jersey City, NY-NJ-PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,79844
+35660,"Niles, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,153401
+35660,"Niles, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48237
+35840,"North Port-Sarasota-Bradenton, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,836995
+35840,"North Port-Sarasota-Bradenton, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58081
+35980,"Norwich-New London, CT (Metropolitan Statistical Area)",2,Population (persons) 1/,265206
+35980,"Norwich-New London, CT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,59717
+36100,"Ocala, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,365579
+36100,"Ocala, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38293
+36140,"Ocean City, NJ (Metropolitan Statistical Area)",2,Population (persons) 1/,92039
+36140,"Ocean City, NJ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,62734
+36220,"Odessa, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,166223
+36220,"Odessa, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,50161
+36260,"Ogden-Clearfield, UT (Metropolitan Statistical Area)",2,Population (persons) 1/,683864
+36260,"Ogden-Clearfield, UT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46123
+36420,"Oklahoma City, OK (Metropolitan Statistical Area)",2,Population (persons) 1/,1408950
+36420,"Oklahoma City, OK (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48860
+36500,"Olympia-Lacey-Tumwater, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,290536
+36500,"Olympia-Lacey-Tumwater, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52828
+36540,"Omaha-Council Bluffs, NE-IA (Metropolitan Statistical Area)",2,Population (persons) 1/,949442
+36540,"Omaha-Council Bluffs, NE-IA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58947
+36740,"Orlando-Kissimmee-Sanford, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,2608147
+36740,"Orlando-Kissimmee-Sanford, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45156
+36780,"Oshkosh-Neenah, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,171907
+36780,"Oshkosh-Neenah, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49276
+36980,"Owensboro, KY (Metropolitan Statistical Area)",2,Population (persons) 1/,119440
+36980,"Owensboro, KY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41858
+37100,"Oxnard-Thousand Oaks-Ventura, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,846006
+37100,"Oxnard-Thousand Oaks-Ventura, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,64715
+37340,"Palm Bay-Melbourne-Titusville, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,601942
+37340,"Palm Bay-Melbourne-Titusville, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47911
+37460,"Panama City, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,174705
+37460,"Panama City, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45690
+37620,"Parkersburg-Vienna, WV (Metropolitan Statistical Area)",2,Population (persons) 1/,89339
+37620,"Parkersburg-Vienna, WV (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43967
+37860,"Pensacola-Ferry Pass-Brent, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,502629
+37860,"Pensacola-Ferry Pass-Brent, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44947
+37900,"Peoria, IL (Metropolitan Statistical Area)",2,Population (persons) 1/,400561
+37900,"Peoria, IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49097
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (Metropolitan Statistical Area)",2,Population (persons) 1/,6102434
+37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,66596
+38060,"Phoenix-Mesa-Chandler, AZ (Metropolitan Statistical Area)",2,Population (persons) 1/,4948203
+38060,"Phoenix-Mesa-Chandler, AZ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48065
+38220,"Pine Bluff, AR (Metropolitan Statistical Area)",2,Population (persons) 1/,87804
+38220,"Pine Bluff, AR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,35611
+38300,"Pittsburgh, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,2317600
+38300,"Pittsburgh, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,60227
+38340,"Pittsfield, MA (Metropolitan Statistical Area)",2,Population (persons) 1/,124944
+38340,"Pittsfield, MA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58299
+38540,"Pocatello, ID (Metropolitan Statistical Area)",2,Population (persons) 1/,95489
+38540,"Pocatello, ID (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39573
+38860,"Portland-South Portland, ME (Metropolitan Statistical Area)",2,Population (persons) 1/,538500
+38860,"Portland-South Portland, ME (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,60000
+38900,"Portland-Vancouver-Hillsboro, OR-WA (Metropolitan Statistical Area)",2,Population (persons) 1/,2492412
+38900,"Portland-Vancouver-Hillsboro, OR-WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,59921
+38940,"Port St. Lucie, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,489297
+38940,"Port St. Lucie, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55691
+39100,"Poughkeepsie-Newburgh-Middletown, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,679158
+39100,"Poughkeepsie-Newburgh-Middletown, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,55745
+39150,"Prescott Valley-Prescott, AZ (Metropolitan Statistical Area)",2,Population (persons) 1/,235099
+39150,"Prescott Valley-Prescott, AZ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41393
+39300,"Providence-Warwick, RI-MA (Metropolitan Statistical Area)",2,Population (persons) 1/,1624578
+39300,"Providence-Warwick, RI-MA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,56138
+39340,"Provo-Orem, UT (Metropolitan Statistical Area)",2,Population (persons) 1/,648252
+39340,"Provo-Orem, UT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42923
+39380,"Pueblo, CO (Metropolitan Statistical Area)",2,Population (persons) 1/,168424
+39380,"Pueblo, CO (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40680
+39460,"Punta Gorda, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,188910
+39460,"Punta Gorda, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42793
+39540,"Racine, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,196311
+39540,"Racine, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,50845
+39580,"Raleigh-Cary, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,1390785
+39580,"Raleigh-Cary, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,57851
+39660,"Rapid City, SD (Metropolitan Statistical Area)",2,Population (persons) 1/,142107
+39660,"Rapid City, SD (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51335
+39740,"Reading, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,421164
+39740,"Reading, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51299
+39820,"Redding, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,180080
+39820,"Redding, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48438
+39900,"Reno, NV (Metropolitan Statistical Area)",2,Population (persons) 1/,475642
+39900,"Reno, NV (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,63328
+40060,"Richmond, VA (Metropolitan Statistical Area) *",2,Population (persons) 1/,1291900
+40060,"Richmond, VA (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,58628
+40140,"Riverside-San Bernardino-Ontario, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,4650631
+40140,"Riverside-San Bernardino-Ontario, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42242
+40220,"Roanoke, VA (Metropolitan Statistical Area) *",2,Population (persons) 1/,313222
+40220,"Roanoke, VA (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,48374
+40340,"Rochester, MN (Metropolitan Statistical Area)",2,Population (persons) 1/,221921
+40340,"Rochester, MN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,56050
+40380,"Rochester, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,1069644
+40380,"Rochester, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53230
+40420,"Rockford, IL (Metropolitan Statistical Area)",2,Population (persons) 1/,336116
+40420,"Rockford, IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44783
+40580,"Rocky Mount, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,145770
+40580,"Rocky Mount, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41444
+40660,"Rome, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,98498
+40660,"Rome, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39314
+40900,"Sacramento-Roseville-Folsom, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,2363730
+40900,"Sacramento-Roseville-Folsom, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,58843
+40980,"Saginaw, MI (Metropolitan Statistical Area)",2,Population (persons) 1/,190539
+40980,"Saginaw, MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40533
+41060,"St. Cloud, MN (Metropolitan Statistical Area)",2,Population (persons) 1/,201964
+41060,"St. Cloud, MN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47436
+41100,"St. George, UT (Metropolitan Statistical Area)",2,Population (persons) 1/,177556
+41100,"St. George, UT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40886
+41140,"St. Joseph, MO-KS (Metropolitan Statistical Area)",2,Population (persons) 1/,125223
+41140,"St. Joseph, MO-KS (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,40135
+41180,"St. Louis, MO-IL (Metropolitan Statistical Area)",2,Population (persons) 1/,2803228
+41180,"St. Louis, MO-IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,56923
+41420,"Salem, OR (Metropolitan Statistical Area)",2,Population (persons) 1/,433903
+41420,"Salem, OR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44709
+41500,"Salinas, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,434061
+41500,"Salinas, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,59838
+41540,"Salisbury, MD-DE (Metropolitan Statistical Area)",2,Population (persons) 1/,415726
+41540,"Salisbury, MD-DE (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49473
+41620,"Salt Lake City, UT (Metropolitan Statistical Area)",2,Population (persons) 1/,1232696
+41620,"Salt Lake City, UT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54450
+41660,"San Angelo, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,122027
+41660,"San Angelo, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49308
+41700,"San Antonio-New Braunfels, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,2550960
+41700,"San Antonio-New Braunfels, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48684
+41740,"San Diego-Chula Vista-Carlsbad, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,3338330
+41740,"San Diego-Chula Vista-Carlsbad, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,63729
+41860,"San Francisco-Oakland-Berkeley, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,4731803
+41860,"San Francisco-Oakland-Berkeley, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,104921
+41940,"San Jose-Sunnyvale-Santa Clara, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,1990660
+41940,"San Jose-Sunnyvale-Santa Clara, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,114080
+42020,"San Luis Obispo-Paso Robles, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,283111
+42020,"San Luis Obispo-Paso Robles, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,61004
+42100,"Santa Cruz-Watsonville, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,273213
+42100,"Santa Cruz-Watsonville, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,71592
+42140,"Santa Fe, NM (Metropolitan Statistical Area)",2,Population (persons) 1/,150358
+42140,"Santa Fe, NM (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,60276
+42200,"Santa Maria-Santa Barbara, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,446499
+42200,"Santa Maria-Santa Barbara, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,66076
+42220,"Santa Rosa-Petaluma, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,494336
+42220,"Santa Rosa-Petaluma, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,66700
+42340,"Savannah, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,393353
+42340,"Savannah, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47869
+42540,"Scranton--Wilkes-Barre, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,553885
+42540,"Scranton--Wilkes-Barre, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47385
+42660,"Seattle-Tacoma-Bellevue, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,3979845
+42660,"Seattle-Tacoma-Bellevue, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,78073
+42680,"Sebastian-Vero Beach, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,159923
+42680,"Sebastian-Vero Beach, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,80818
+42700,"Sebring-Avon Park, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,106221
+42700,"Sebring-Avon Park, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,34480
+43100,"Sheboygan, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,115340
+43100,"Sheboygan, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,54703
+43300,"Sherman-Denison, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,136212
+43300,"Sherman-Denison, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43987
+43340,"Shreveport-Bossier City, LA (Metropolitan Statistical Area)",2,Population (persons) 1/,394706
+43340,"Shreveport-Bossier City, LA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48310
+43420,"Sierra Vista-Douglas, AZ (Metropolitan Statistical Area)",2,Population (persons) 1/,125922
+43420,"Sierra Vista-Douglas, AZ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41766
+43580,"Sioux City, IA-NE-SD (Metropolitan Statistical Area)",2,Population (persons) 1/,144701
+43580,"Sioux City, IA-NE-SD (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52829
+43620,"Sioux Falls, SD (Metropolitan Statistical Area)",2,Population (persons) 1/,268232
+43620,"Sioux Falls, SD (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,62003
+43780,"South Bend-Mishawaka, IN-MI (Metropolitan Statistical Area)",2,Population (persons) 1/,323613
+43780,"South Bend-Mishawaka, IN-MI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48035
+43900,"Spartanburg, SC (Metropolitan Statistical Area)",2,Population (persons) 1/,319785
+43900,"Spartanburg, SC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44169
+44060,"Spokane-Spokane Valley, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,568521
+44060,"Spokane-Spokane Valley, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47827
+44100,"Springfield, IL (Metropolitan Statistical Area)",2,Population (persons) 1/,206868
+44100,"Springfield, IL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49301
+44140,"Springfield, MA (Metropolitan Statistical Area)",2,Population (persons) 1/,697382
+44140,"Springfield, MA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53978
+44180,"Springfield, MO (Metropolitan Statistical Area)",2,Population (persons) 1/,470300
+44180,"Springfield, MO (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42605
+44220,"Springfield, OH (Metropolitan Statistical Area)",2,Population (persons) 1/,134083
+44220,"Springfield, OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41811
+44300,"State College, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,162385
+44300,"State College, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47564
+44420,"Staunton, VA (Metropolitan Statistical Area) *",2,Population (persons) 1/,123120
+44420,"Staunton, VA (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,45658
+44700,"Stockton, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,762148
+44700,"Stockton, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47139
+44940,"Sumter, SC (Metropolitan Statistical Area)",2,Population (persons) 1/,140466
+44940,"Sumter, SC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38687
+45060,"Syracuse, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,648593
+45060,"Syracuse, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52051
+45220,"Tallahassee, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,387227
+45220,"Tallahassee, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44232
+45300,"Tampa-St. Petersburg-Clearwater, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,3194831
+45300,"Tampa-St. Petersburg-Clearwater, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48908
+45460,"Terre Haute, IN (Metropolitan Statistical Area)",2,Population (persons) 1/,186367
+45460,"Terre Haute, IN (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38851
+45500,"Texarkana, TX-AR (Metropolitan Statistical Area)",2,Population (persons) 1/,148761
+45500,"Texarkana, TX-AR (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,38910
+45540,"The Villages, FL (Metropolitan Statistical Area)",2,Population (persons) 1/,132420
+45540,"The Villages, FL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48387
+45780,"Toledo, OH (Metropolitan Statistical Area)",2,Population (persons) 1/,641816
+45780,"Toledo, OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48330
+45820,"Topeka, KS (Metropolitan Statistical Area)",2,Population (persons) 1/,231969
+45820,"Topeka, KS (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47418
+45940,"Trenton-Princeton, NJ (Metropolitan Statistical Area)",2,Population (persons) 1/,367430
+45940,"Trenton-Princeton, NJ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,71790
+46060,"Tucson, AZ (Metropolitan Statistical Area)",2,Population (persons) 1/,1047279
+46060,"Tucson, AZ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45456
+46140,"Tulsa, OK (Metropolitan Statistical Area)",2,Population (persons) 1/,998626
+46140,"Tulsa, OK (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,56540
+46220,"Tuscaloosa, AL (Metropolitan Statistical Area)",2,Population (persons) 1/,252047
+46220,"Tuscaloosa, AL (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,39738
+46300,"Twin Falls, ID (Metropolitan Statistical Area)",2,Population (persons) 1/,111290
+46300,"Twin Falls, ID (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41899
+46340,"Tyler, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,232751
+46340,"Tyler, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,56292
+46520,"Urban Honolulu, HI (Metropolitan Statistical Area)",2,Population (persons) 1/,974563
+46520,"Urban Honolulu, HI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,61174
+46540,"Utica-Rome, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,289990
+46540,"Utica-Rome, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,46151
+46660,"Valdosta, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,147292
+46660,"Valdosta, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,37623
+46700,"Vallejo, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,447643
+46700,"Vallejo, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,53505
+47020,"Victoria, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,99742
+47020,"Victoria, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48681
+47220,"Vineland-Bridgeton, NJ (Metropolitan Statistical Area)",2,Population (persons) 1/,149527
+47220,"Vineland-Bridgeton, NJ (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41237
+47260,"Virginia Beach-Norfolk-Newport News, VA-NC (Metropolitan Statistical Area) *",2,Population (persons) 1/,1768901
+47260,"Virginia Beach-Norfolk-Newport News, VA-NC (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,52011
+47300,"Visalia, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,466195
+47300,"Visalia, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42845
+47380,"Waco, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,273920
+47380,"Waco, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,41723
+47460,"Walla Walla, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,60760
+47460,"Walla Walla, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,48444
+47580,"Warner Robins, GA (Metropolitan Statistical Area)",2,Population (persons) 1/,185409
+47580,"Warner Robins, GA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43358
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (Metropolitan Statistical Area) *",2,Population (persons) 1/,6280487
+47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,74385
+47940,"Waterloo-Cedar Falls, IA (Metropolitan Statistical Area)",2,Population (persons) 1/,168522
+47940,"Waterloo-Cedar Falls, IA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,47623
+48060,"Watertown-Fort Drum, NY (Metropolitan Statistical Area)",2,Population (persons) 1/,109834
+48060,"Watertown-Fort Drum, NY (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49365
+48140,"Wausau-Weston, WI (Metropolitan Statistical Area)",2,Population (persons) 1/,163285
+48140,"Wausau-Weston, WI (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51295
+48260,"Weirton-Steubenville, WV-OH (Metropolitan Statistical Area)",2,Population (persons) 1/,116074
+48260,"Weirton-Steubenville, WV-OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,42158
+48300,"Wenatchee, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,120629
+48300,"Wenatchee, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51023
+48540,"Wheeling, WV-OH (Metropolitan Statistical Area)",2,Population (persons) 1/,138948
+48540,"Wheeling, WV-OH (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,49301
+48620,"Wichita, KS (Metropolitan Statistical Area)",2,Population (persons) 1/,640218
+48620,"Wichita, KS (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,52129
+48660,"Wichita Falls, TX (Metropolitan Statistical Area)",2,Population (persons) 1/,151254
+48660,"Wichita Falls, TX (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44910
+48700,"Williamsport, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,113299
+48700,"Williamsport, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,44941
+48900,"Wilmington, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,297533
+48900,"Wilmington, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45975
+49020,"Winchester, VA-WV (Metropolitan Statistical Area) *",2,Population (persons) 1/,140566
+49020,"Winchester, VA-WV (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,49643
+49180,"Winston-Salem, NC (Metropolitan Statistical Area)",2,Population (persons) 1/,676008
+49180,"Winston-Salem, NC (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45904
+49340,"Worcester, MA-CT (Metropolitan Statistical Area)",2,Population (persons) 1/,947404
+49340,"Worcester, MA-CT (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,57214
+49420,"Yakima, WA (Metropolitan Statistical Area)",2,Population (persons) 1/,250873
+49420,"Yakima, WA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45757
+49620,"York-Hanover, PA (Metropolitan Statistical Area)",2,Population (persons) 1/,449058
+49620,"York-Hanover, PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,51585
+49660,"Youngstown-Warren-Boardman, OH-PA (Metropolitan Statistical Area)",2,Population (persons) 1/,536081
+49660,"Youngstown-Warren-Boardman, OH-PA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,43167
+49700,"Yuba City, CA (Metropolitan Statistical Area)",2,Population (persons) 1/,175639
+49700,"Yuba City, CA (Metropolitan Statistical Area)",3,Per capita personal income (dollars) 2/,45782
+49740,"Yuma, AZ (Metropolitan Statistical Area) *",2,Population (persons) 1/,213787
+49740,"Yuma, AZ (Metropolitan Statistical Area) *",3,Per capita personal income (dollars) 2/,36570
+Legend / Footnotes:,,,,
+1/ Census Bureau midyear population estimates. Estimates for 2010-2019 reflect county population estimates available as of March 2020.,,,,
+2/ Per capita personal income was computed using Census Bureau midyear population estimates. Estimates for 2010-2019 reflect county population estimates available as of March 2020.,,,,
+"* Cibola, NM was separated from Valencia in June 1981, but in these estimates, Valencia includes Cibola through the end of 1981.",,,,
+"* La Paz County, AZ was separated from Yuma County on January 1, 1983. The Yuma, AZ MSA contains the area that became La Paz County, AZ through 1982 and excludes it beginning with 1983.",,,,
+"* Broomfield County, CO, was created from parts of Adams, Boulder, Jefferson, and Weld counties effective November 15, 2001. Estimates for Broomfield county begin with 2002.",,,,
+"* Estimates for 1979 forward reflect Alaska Census Areas as defined by the Census Bureau; those for prior years reflect Alaska Census Divisions as defined in the 1970 Decennial Census. Estimates from 1988 forward separate Aleutian Islands Census Area into Aleutians East Borough and Aleutians West Census Area. Estimates for 1991 forward separate Denali Borough from Yukon-Koyukuk Census Area and Lake and Peninsula Borough from Dillingham Census Area. Estimates from 1993 forward separate Skagway-Yakutat-Angoon Census Area into Skagway-Hoonah-Angoon Census Area and Yakutat Borough. Estimates from 2008 forward separate Skagway-Hoonah-Angoon Census Area into Skagway Municipality and Hoonah-Angoon Census Area. Estimates from 2009 forward separate Wrangell-Petersburg Census Area into Petersburg Census Area and Wrangell City and Borough. In addition, a part of the Prince of Wales-Outer Ketchikan Census Area was annexed by Ketchikan Gateway Borough and part (Meyers Chuck Area) was included in the new Wrangell City and Borough. The remainder of the Prince of Wales-Outer Ketchikan Census Area was renamed Prince of Wales-Hyder Census Area. Petersburg Borough was created from part of former Petersburg Census Area and part of Hoonah-Angoon Census Area for 2013 forward. Prince of Wales-Hyder Census Area added part of the former Petersburg Census Area beginning in 2013. For years 2009-2012, Petersburg Borough reflects the geographic boundaries of the former Petersburg Census Area. Wade Hampton Census Area was renamed Kusilvak Census Area on July 1, 2015.",,,,
+"* Virginia combination areas consist of one or two independent cities with 1980 populations of less than 100,000 combined with an adjacent county. The county name appears first, followed by the city name(s). Separate estimates for the jurisdictions making up the combination area are not available. Bedford County, VA includes the independent city of Bedford for all years.",,,,
+"Metropolitan Areas are defined (geographically delineated) by the Office of Management and Budget (OMB) bulletin no. 20-01 issued March 6, 2020.",,,,
+Note. All dollar estimates are in thousands of current dollars (not adjusted for inflation). Statistics presented in thousands of dollars do not indicate more precision than statistics presented in millions of dollars.,,,,
+"Last updated: November 17, 2020-- new statistics for 2019; revised statistics for 2010-2018.",,,,

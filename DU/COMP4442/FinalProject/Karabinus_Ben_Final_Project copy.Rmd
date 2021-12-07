@@ -1,0 +1,512 @@
+---
+title: "COMP 4442 Final Profect"
+author: "Ben Karabinus"
+date: "11/8/2021"
+output:
+    word_document: default
+    html_document: default
+    pdf_document: default
+---
+
+```{r setup, include=TRUE}
+
+knitr::opts_chunk$set(echo = TRUE)
+# load necessary libraries
+library(dplyr)
+library(tidyverse)
+library(stringr)
+library(ggplot2)
+library(ggeasy)
+if(!require(GGally)){ install.packages("GGally"); library(GGally)}
+if(!require(skimr)){ install.packages("skimr"); library(skimr)}
+if(!require(xgboost)){ install.packages("xgboost"); library(xgboost)}
+if(!require(caret)){ install.packages("caret"); library(caret)}
+if(!require(recipes)){ install.packages("recipes"); library(recipes)}
+if(!require(rsample)){ install.packages("rsample"); library(rsample)}
+if(!require(parsnip)){ install.packages("parsnip"); library(parsnip)}
+if(!require(dials)){ install.packages("dials"); library(dials)}
+if(!require(workflows)){ install.packages("workflows"); library(workflows)}
+if(!require(yardstick)){ install.packages("yardstick"); library(yardstick)}
+if(!require(tune)){ install.packages("tune"); library(tune)}
+if(!require(doParallel)){ install.packages("doParallel");library(doParallel)}
+all_cores <- parallel::detectCores(logical = FALSE)
+registerDoParallel(cores = all_cores)
+```
+
+```{r echo=TRUE}
+# load data 
+condos <- read.csv("Metro_zhvi_condos and co-ops.csv", header=TRUE, sep=",")
+fiveBed <- read.csv("Metro_zhvi_Five_Plus_Bedroom.csv", header=TRUE, sep=",")
+fourBed <- read.csv("Metro_zhvi_Four_Bedroom.csv", header=TRUE, sep=",")
+threeBed <- read.csv("Metro_zhvi_Three_Bedroom.csv", header=TRUE, sep=",")
+twoBed <- read.csv("Metro_zhvi_Two_Bedroom.csv", header=TRUE, sep=",")
+oneBed <- read.csv("Metro_zhvi_One_Bedroom.csv", header=TRUE, sep=",")
+popIncome <- read.csv("PopulationandPerCapitaIncomeMSA2019.csv", header=TRUE, sep=",")
+Rpp <- read.csv("RegionalPriceParitiesMSA2019.csv", header=TRUE, sep=",")
+unEmp <- read.csv("UnemploymentMSA2019.csv", header=TRUE, sep=",")
+```
+
+```{r echo=TRUE}
+# ZHVI data structure represents each month in a year as a column
+# keep only 2019
+condos <- subset(condos, select = -c(1:2, 4, 18:38))
+fiveBed <- subset(fiveBed, select = -c(1:2, 4, 18:38))
+fourBed <- subset(fourBed, select = -c(1:2, 4, 18:38))
+threeBed <- subset(threeBed, select = -c(1:2, 4, 18:38))
+twoBed <- subset(twoBed, select = -c(1:2, 4, 18:38))
+oneBed <- subset(oneBed, select = -c(1:2, 4, 18:38))
+```
+
+
+```{r echo=TRUE}
+
+# create aggregate of home value for year 2019 (median)
+condos$value <- apply(condos[,3:14], 1, median)
+fiveBed$value <- apply(fiveBed[,3:14], 1, median)
+fourBed$value <- fourBed$value <- apply(fourBed[,3:14], 1, median)
+threeBed$value <- threeBed$value <- apply(threeBed[,3:14], 1, median)
+twoBed$value <- twoBed$value <- apply(twoBed[,3:14], 1, median)
+oneBed$value <- oneBed$value <- apply(oneBed[,3:14], 1, median)
+```
+
+
+
+```{r echo=TRUE}
+
+# drop unecessary columns
+condos <- subset(condos, select = -c(3:14))
+fiveBed <- subset(fiveBed, select = -c(3:14))
+fourBed <- subset(fourBed, select = -c(3:14))
+threeBed <- subset(threeBed, select = -c(3:14))
+twoBed <- subset(twoBed, select = -c(3:14))
+oneBed <- subset(oneBed, select = -c(3:14))
+# create categorical variable for home size
+condos[, "Size"] <- "condo"
+fiveBed[, "Size"] <- "five"
+fourBed[, "Size"] <- "four"
+threeBed[, "Size"] <- "three"
+twoBed[, "Size"] <- "two"
+oneBed[, 'Size'] <- "one"
+# combine ZHVI data
+homeValue <- rbind(condos,oneBed, twoBed, threeBed, fourBed, fiveBed)
+# drop aggregate (United States)
+homeValue <- subset(homeValue, RegionName != "United States")
+# rename value to Value
+colnames(homeValue)[3] <- "Value"
+
+```
+
+```{r echo=TRUE}
+
+# clean unemployment data
+# remove extra strings in MSA column
+unEmp <- unEmp %>% filter(!grepl("Metropolitan NECTA", MSA))
+unEmp$MSA <- str_remove_all(unEmp$MSA, 
+                            "Metropolitan Statistical Area")
+# remove unwanted characters from column MSA
+unEmp$State <- sub(".*,", "",unEmp$MSA)
+unEmp$MSA <- sub("-.*", "",unEmp$MSA)
+unEmp$State <- sub("-.*", "", unEmp$State)
+unEmp$MSA <- sub(",.*","",unEmp$MSA)
+unEmp$MSA <- str_trim(unEmp$MSA, side = 'both')
+unEmp$State <- str_trim(unEmp$State, side = 'both')
+# create clean column of MSA's rename to Region
+unEmp$Region <- str_c(unEmp$MSA, ", ", unEmp$State)
+# drop unneeded columns
+unEmp <- subset(unEmp, select = -c(1, 3))
+# rename column for unemployment rate
+colnames(unEmp)[1] <- "UnEmpRate"
+
+```
+
+
+```{r echo=TRUE}
+
+# Drop column GeoFips
+Rpp <- subset(Rpp, select = -c(1))
+# rename column X2019 and GeoName
+colnames(Rpp)[4] <- c("RPP")
+colnames(Rpp)[1] <- c("MSA")
+# keep aggregate of regional price parities only
+Rpp <- subset(Rpp, LineCode == 1) 
+# remove rows containing United States
+Rpp <- Rpp %>% filter(!grepl("United States", MSA))
+# clean the MSA column
+Rpp$MSA <- str_remove_all(Rpp$MSA, "\\s*\\([^\\)]+\\)")
+Rpp$MSA <- str_remove_all(Rpp$MSA, "2/")
+Rpp$MSA <- str_trim(Rpp$MSA, side = 'both')
+# remove unecessary columns
+Rpp <- subset(Rpp, select = -c(2, 3))
+
+```
+
+```{r echo=TRUE}
+
+# drop NA's
+popIncome <- popIncome %>% drop_na()
+# drop unnecessary columns
+popIncome <- subset(popIncome, select = -c(1))
+# drop rows containing "United States" (aggregates)
+popIncome <- popIncome %>% filter(!grepl("United States", GeoName))
+# rename columns 
+colnames(popIncome)[1] <- c("MSA")
+# split population and per capita income into seperate columns
+Pop <- popIncome[popIncome$LineCode == 2, ]
+Income <- popIncome[popIncome$LineCode == 3, ]
+# rename columns
+colnames(Pop)[4] <- c("POP")
+colnames(Income)[4] <- c("Income")
+# drop unecessary columns
+Pop <- subset(Pop, select = -c(2, 3))
+Income <- subset(Income, select = -c(2,3))
+# create columns for population and income
+dat.temp <- inner_join(Pop, Income, by = "MSA")
+# clean the MSA column 
+dat.temp$MSA = str_remove_all(dat.temp$MSA, "\\*")
+dat.temp$MSA <- str_remove_all(dat.temp$MSA, "\\s*\\([^\\)]+\\)")
+dat.temp$MSA <- str_trim(dat.temp$MSA, side = 'both')
+# join RPP and popIncome data
+combined <- inner_join(dat.temp, Rpp, by = "MSA")
+
+```
+
+```{r echo=TRUE}
+# clean MSA column combined dataframe and rename Region
+combined$State <- sub(".*,", "",combined$MSA)
+combined$MSA <- sub("-.*", "",combined$MSA)
+combined$State <- sub("-.*", "", combined$State)
+combined$MSA <- sub("/.*", "",combined$MSA)
+combined$MSA <- sub(",.*","",combined$MSA)
+combined$MSA <- str_trim(combined$MSA, side = 'both')
+combined$State <- str_trim(combined$State, side = 'both')
+combined$Region <- str_c(combined$MSA, ", ", combined$State)
+# clean homeValue RegionName and rename Region
+homeValue$RegionName <- sub(",.*", "",homeValue$RegionName)
+homeValue$RegionName <- sub("-.*", "", homeValue$RegionName)
+homeValue$RegionName <- str_trim(homeValue$RegionName, side = 'both')
+homeValue$StateName <- str_trim(homeValue$StateName, side = 'both')
+homeValue$Region <- str_c(homeValue$RegionName, ", ", homeValue$StateName)
+
+# join homeValue and combined rename dat.XG
+dat.XG <- left_join(homeValue, combined, by = "Region")
+dat.XG <- dat.XG %>% drop_na()
+# join unEmp and dat.XG
+dat.XG <- left_join(unEmp, dat.XG, by = "Region")
+# drop unnecessary rows and rearrange columns 
+dat.XG <- subset(dat.XG, select = -c(3, 4, 7, 11))
+dat.XG <- dat.XG[c("Region", "POP", "Size", "Income", 
+                         "RPP","UnEmpRate", "Value")]
+dat.XG$Region <- as.factor(dat.XG$Region)
+dat.XG$Size <- as.factor(dat.XG$Size)
+# check for NA's in each column
+colSums((is.na(dat.XG)))
+# examine NA's
+which(is.na(dat.XG), arr.ind = T)
+#drop NA's
+dat.XG <- dat.XG %>% drop_na()
+
+```
+
+##############Exploratory data analysis###########
+
+```{r echo=TRUE}
+
+# quick view of summary statistics for data set
+skim(dat.XG)
+
+```
+
+
+```{r echo=TRUE}
+
+ggplot(data = dat.XG, aes(x=POP))+geom_density(fill = 'red')+
+  xlab("Population")
+ggplot(data = dat.XG, aes(x=Income))+geom_density(fill = 'blue')+
+  xlab('Income (USD)')
+ggplot(data = dat.XG, aes(x=RPP))+geom_density(fill = 'orange')+
+  xlab('Regioanl Price Parity (% of National Price Level for Consumer Goods)')
+ggplot(data = dat.XG, aes(x=UnEmpRate))+geom_density(fill = 'purple')+
+  xlab('Unemployment Rate (%)')
+ggplot(data = dat.XG, aes(x=Value))+geom_density(fill = 'green')+
+  xlab('Zillow Home Value Estimate (USD)')
+
+```
+
+
+
+```{r echo=TRUE}
+
+ggcorr(dat.XG, label = TRUE)+ggtitle('Pearson Correlation')+
+easy_center_title()
+
+```
+
+
+
+```{r echo=TRUE}
+
+# visual assessment distribution of home values by size (histogram)
+ggplot(data = dat.XG, aes(y=Value, group = Size, fill = Size))+
+  geom_boxplot()+
+  theme_classic()+
+  ylab("Value (USD)")+
+  facet_wrap(~Size)
+
+```
+
+
+```{r echo=TRUE}
+# quantitative assessment of home values by size
+dat.XG %>% group_by(Size)%>% summarize(mean(Value), median(Value))
+
+```
+
+
+
+```{r echo=TRUE}
+
+# split data into training and test sets
+n <- nrow(dat.XG)
+# shuffle data
+dat.XG <- dat.XG[sample(1:n),]
+# set seed for reproducability
+set.seed(123456)
+# create random sample of int 0-1 from n, proportions .70, .30
+tv.split <- sample(rep(0:1,c(round(n*.3),n-round(n*.3))),n)
+# print table of counts (0, 1) for verification    
+table(tv.split)   
+# training set (1495)
+xg.train <- dat.XG[tv.split==1,]
+# test set (640)
+xg.test <- dat.XG[tv.split == 0,]
+
+```
+
+
+```{r echo=TRUE}
+
+# create matrix of predictors
+X.train <- data.matrix(xg.train[, -7])
+X.test <- data.matrix(xg.test[, -7])
+# create vector of outcomes 
+Y.train <- data.matrix(xg.train[, 7])
+Y.test <- data.matrix(xg.test[, 7])
+# create xgb.DMatrix for training and test
+xgb_train <- xgb.DMatrix(data = X.train, label = Y.train)
+xgb_test <- xgb.DMatrix(data = X.test, label = Y.test)
+
+```
+
+
+```{r echo=TRUE}
+
+# print summary of the initial model
+model.1$evaluation_log %>%
+  dplyr::summarise(
+    ntrees.train = which(train_rmse_mean == min(train_rmse_mean))[1],
+    rmse.train   = min(train_rmse_mean),
+    ntrees.test  = which(test_rmse_mean == min(test_rmse_mean))[1],
+    rmse.test   = min(test_rmse_mean),
+)
+```
+
+
+```{r echo=TRUE}
+# plot the RMSE for training and test in first cross validated model
+
+ggplot(model.1$evaluation_log) +
+  geom_line(aes(iter, train_rmse_mean), color = "red") +
+  geom_line(aes(iter, test_rmse_mean), color = "green")
+
+```
+
+
+```{r echo=TRUE}
+
+# define pre-processing steps for the data "recipe"
+recipe <-
+  # provide data and formula
+  recipes::recipe(Value ~ ., data = xg.train) %>%
+  # convert categorical variables to factors
+  recipes::step_string2factor(all_nominal()) %>% 
+  prep()
+
+```
+
+
+```{r echo=TRUE}
+
+# create folds for cross validation
+cv_folds <- 
+  # treat data using recipe
+  recipes::bake(
+    recipe,
+    # specify data for CV (training data)
+    new_data = xg.train
+  ) %>%
+  # specify num_folds
+  rsample::vfold_cv(v = 5)
+
+```
+
+```{r echo=TRUE}
+
+# XGBoost model specification using parsnip library, boost_tree function
+model.XG <- 
+  parsnip::boost_tree(
+    mode = "regression",
+    trees = tune(), # number of trees to build during model fitting
+    min_n = tune(), # min number of data points required for split in tree node
+    tree_depth = tune(), # max splits for trees
+    learn_rate = tune(), # rate at which model minimizes loss function
+    loss_reduction = tune(), # min reduction in loss function required for split
+    sample_size = 0.5,
+    stop_iter = 10 # stop tuning if no improvement after 10 iterations
+  ) %>%
+    # specify XGBoost algorithm as engine 
+    set_engine("xgboost", objective = "reg:squarederror")
+
+```
+
+
+```{r echo=TRUE}
+
+# specify parameters for grid search
+xgboost_params <- 
+  dials::parameters(
+    min_n(),
+    tree_depth(),
+    learn_rate(),
+    loss_reduction(),
+    trees()
+  )
+# set grid space
+xgboost_grid <- 
+  dials::grid_max_entropy(
+    xgboost_params, 
+    size = 100 # (5 CV folds) * (size = 100), 500 parameter combinations
+  )
+# print head for search grid
+head(xgboost_grid)
+
+```
+
+
+```{r echo=TRUE}
+
+# define the workflow f
+xgboost_wf <- 
+  workflows::workflow() %>%
+  add_model(model.XG) %>% # add the XGBoost model defined with parsnip
+  add_formula(Value ~ .) # specify formula
+
+```
+
+```{r echo=TRUE}
+
+# tune the model using tidymodels tune()
+xgboost_tuned <- tune::tune_grid(
+  object = xgboost_wf, # specified workflow
+  resamples = cv_folds, # specified cross-validation
+  grid = xgboost_grid, # specified search grid
+  metrics = yardstick::metric_set(rmse), # metric for tuning rmse 
+  control = tune::control_grid(verbose = TRUE)
+)
+
+```
+
+
+```{r echo=TRUE}
+
+# select and view best parameters from model tuning
+best_params <- xgboost_tuned %>%
+  tune::select_best("rmse")
+# print best params
+best_params
+
+```
+
+```{r echo=TRUE}
+
+# finalize the model
+model.best <- model.XG %>% 
+  finalize_model(best_params)
+
+model.best
+```
+
+```{r echo=TRUE}
+
+# use predifined recipe to prepare the training data
+train <- bake(recipe, new_data = xg.train)
+
+train_prediction <- model.best %>% # fit the best model on the training data
+  fit(formula = Value ~ ., data = train) %>%
+  predict(train) %>% # make prediction on training data using the best model
+  bind_cols(xg.train) # bind predict with xg.train for side by side view
+
+# print results
+train_prediction
+
+xgboost_score_train <- 
+  train_prediction %>%
+  yardstick::metrics(Value, .pred) %>%
+  mutate(.estimate = format(round(.estimate, 2), big.mark = ","))
+
+xgboost_score_train
+```
+
+
+
+```{r echo=TRUE}
+
+test_processed  <- bake(recipe, new_data = xg.test)
+
+test_prediction <- model.best %>%
+  # fit the model on all the training data
+  fit(
+    formula = Value ~ ., 
+    data    = train
+  ) %>%
+  # use the training model fit to predict the test data
+  predict(new_data = test_processed) %>%
+  bind_cols(xg.test)
+
+# measure the accuracy of our model using `yardstick`
+xgboost_score <- 
+  test_prediction %>%
+  yardstick::metrics(Value, .pred)
+
+xgboost_score
+
+```
+
+```{r echo=TRUE}
+
+# create xgb.Booster object to use for visualizing variable importance
+params <- list(
+  eta = model.best$args$learn_rate[2],
+  max_depth = model.best$args$tree_depth[2],
+  gamma = model.best$args$loss_reduction[2],
+  min_child_weight = model.best$args$min_n[2],
+  subsample = 1.0
+)
+
+xgb.fit <- xgboost(
+  params = params,
+  data = xgb_train,
+  objective = 'reg:squarederror',
+  nrounds = 931,
+  verbose = 0
+  
+)
+
+importance_matrix <- xgb.importance(model = xgb.fit)
+
+# variable importance plot
+xgb.plot.importance(importance_matrix, top_n = 10, measure = "Gain")
+
+```
+
+
+

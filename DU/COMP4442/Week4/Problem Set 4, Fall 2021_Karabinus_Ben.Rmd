@@ -1,0 +1,490 @@
+---
+title: "Problem Set 4, Fall 2021"
+author: "Ben Karabinus"
+output:
+    word_document: default
+    html_document: default
+    pdf_document: default
+---
+
+```{r setup, include=TRUE}
+# Load required packages
+library(ggpubr)
+library(leaps) 
+library(tidyverse)
+library(stringr)
+```
+
+CONTEXT: Factorial experiment with doughnuts
+
+Donna is the owner of a boutique doughnut shop. Because many of her customers are conscious of their fat intake but want the flavor of fried doughnuts, she decided to develop a doughnut recipe that minimizes the amount of fat that the doughnuts absorb from the fat in which the doughnuts are fried.
+
+She conducted a factorial experiment that had a similar procedures as Lowe (1935). Like Lowe, she used four types of fats (fat_type). She also used three types of flour (flour_type): all-purpose flour, whole wheat flour, and gluten-free flour. For each combination of fat type and flour type, she cooked six identical batches of doughnuts. Each batch contained 24 doughnuts, and the total fat (in grams) absorbed by the doughnuts in each batch was recorded (sim_tot_fat).
+
+## Question 1 - Nested model testing (15 points)
+
+As previously noted, ANOVA is a special case of regression, so anything that can be done in the ANOVA framework can be done in the regression framework. However, this property often isn't obvious when comparing the output of equivalently-specified analyses. For example, the output of the two-way ANOVA with an interaction displays clearly labeled tests of two main effects and one test of the interaction, but the output of the equivalent regression model displays estimates of numerous coefficients that have interpretations different than those used in the ANOVA framework.
+
+In this question, you will use nested model testing to conduct the equivalent tests of main effects and interactions using the regression framework.  
+
+Before you start, read in the data and do your data processing.
+
+```{r echo=TRUE}
+
+doughnuts.factorial <- read.csv("doughnutsfactorial.csv", header=TRUE, sep=",") # Loads the CSV file into memory. You may need to adapt this line to work on your computer
+
+```
+
+As in the previous problem set, please create two new variables in the doughnuts.factorial data set. The first new variable will be called fat_type_factor and will contain the same values as in the fat_type variable but will have a variable type of factor. The second new variable will be called flour_type_factor and will contain the same values as in the flour_type variable but will also have a variable type of factor. 
+
+```{r echo=TRUE}
+
+# Transform fat_type and flour_type
+doughnuts.factorial$fat_type_factor <- as.factor(doughnuts.factorial$fat_type)
+
+doughnuts.factorial$flour_type_factor <- as.factor(doughnuts.factorial$flour_type)
+
+```
+
+Check your work by running the following code chunk. Be sure that fat_type_factor and flour_type_factor are factor-type variables before you complete the rest of the problem set.
+
+```{r echo=TRUE}
+# check the structure of the data set
+str(doughnuts.factorial)
+```
+
+# Question 1, Part 1 - Nested model testing of main effects (5 points)
+
+For this part, you will start by fitting three regression models: an intercept-only model, a fat type-only model, and a flour-type only model. For all models, use sim_tot_fat as the outcome. 
+
+Fit the intercept-only model here:
+```{r echo=TRUE}
+
+# create the null (intercept only) model
+model.null <- lm(sim_tot_fat ~ 1, data=doughnuts.factorial)
+# print model summary    
+summary(model.null)
+
+```
+
+Fit the fat type-only model here:
+```{r echo=TRUE}
+
+# create the fat_type model
+model.fatType <- lm(sim_tot_fat ~ fat_type_factor, data=doughnuts.factorial)
+# print the model summary
+summary(model.fatType)
+
+```
+
+Fit the flour type-only model here:
+```{r echo=TRUE}
+
+# create the model for flour_type
+model.flourType <- lm(sim_tot_fat ~ flour_type_factor, data=doughnuts.factorial)
+# print model    
+summary(model.flourType)
+
+```
+
+Now, conduct two nested model tests to conduct the ANOVA-equivalent tests of main effect. 
+
+Compare the intercept-only model to the fat type-only model:
+```{r echo=TRUE}
+
+# nested model test, compare fat_type model to null model
+anova(model.null, model.fatType)
+
+```
+
+Compare the intercept-only model to the flour type-only model:
+```{r echo=TRUE}
+
+# compare the flour_type model to the the null model
+anova(model.null, model.flourType)
+
+```
+
+# Question 1, Part 2 - Nested model testing of interaction (5 points)
+
+Unlike the previous part, the "base" model for this comparison is not an intercept-only model. Rather, the base model is a model where the interaction is omitted. In the regression framework, this means that the correct reduced model for this ANOVA-equivalent test is a model that includes fat type and flour type, but no interaction between them. 
+
+Fit the reduced model, which will contain just fat type and flour type (no interaction), below
+```{r echo=TRUE}
+
+# create the main model
+model.main <- lm(sim_tot_fat ~ fat_type_factor + flour_type_factor,
+                 data=doughnuts.factorial)
+# print model summary    
+summary(model.main)
+
+```
+
+Fit the full model, which will contain fat type, flour type, and their interaction
+```{r echo=TRUE}
+
+# create the full model with interaction 
+model.interaction <- lm(sim_tot_fat ~ fat_type_factor*flour_type_factor, 
+                        data=doughnuts.factorial)
+# pritn model summary    
+summary(model.interaction)
+
+```
+
+Now, conduct one nested model test to conduct the ANOVA-equivalent test of the interaction effect. 
+
+```{r echo=TRUE}
+
+# nested model test for interaction effect
+anova(model.main, model.interaction)
+
+```
+
+# Question 1, Part 3 - Interpreting your results (5 points)
+
+You will answer three questions comparing the results of your nested regression model tests and the ANOVA-style tests. 
+
+A)
+
+Run the code chunk below to see the results of the one-way ANOVA for fat type you conducted in a previous problem set before answering the question.
+
+```{r echo=TRUE}
+
+doughnuts.fat = aov(sim_tot_fat ~ fat_type_factor, data=doughnuts.factorial)
+
+summary(doughnuts.fat)
+
+```
+
+Look at the results of the nested model test you conducted for *fat type* in *Question 1, Part 1*. Does the F-change test statistic and p-value from that nested model test match the F statistic and p-value (within rounding) of the test in the one-way ANOVA?
+
+Your answer here (yes/no):
+
+Yes
+
+B)
+
+Run the code chunk below to see the results of the one-way ANOVA for flour type you conducted in a previous problem set before answering the question.
+
+```{r echo=TRUE}
+
+doughnuts.flour = aov(sim_tot_fat ~ flour_type_factor, data=doughnuts.factorial)
+
+summary(doughnuts.flour )
+
+```
+
+Look at the results of the nested model test you conducted for *flour type* in *Question 1, Part 1*. Does the F-change test statistic and p-value from that nested model test match the F statistic and p-value (within rounding) of the test in the one-way ANOVA?
+
+Your answer here (yes/no): 
+
+Yes
+
+C)
+
+Run the code chunk below to see the results of the two-way ANOVA with an interaction model you conducted in a previous problem set before answering the question.
+```{r echo=TRUE}
+
+doughnuts.fact.2aov = aov(sim_tot_fat ~ fat_type_factor + flour_type_factor + fat_type_factor*flour_type_factor, data=doughnuts.factorial)
+
+summary(doughnuts.fact.2aov)
+
+```
+
+Look at the results of the nested model test you conducted in *Question 1, Part 2*. Does the F-change test statistic and p-value from the nested model test match the F statistic and p-value (within rounding) of the interaction test in the two-way ANOVA with an interaction?
+
+Your answer here (yes/no): 
+
+Yes
+
+-----
+
+CONTEXT - FISHERMAN DATA (many thanks to Dr. Durso for obtaining this data set)
+
+Data Source: N.B. Al-Majed and M.R. Preston (2000). "Factors Influencing the Total
+Mercury and Methyl Mercury in the Hair of Fishermen in Kuwait," 
+Environmental Pollution, Vol. 109, pp. 239-250.
+
+   http://users.stat.ufl.edu/~winner/datasets.html, downloaded on 4/23/2019
+
+Description: Factors related to mercury levels among fishermen and a control
+group of non-fishermen.
+
+Variables (names of variables in the data set)
+
+Fisherman indicator ("fisherman"), categorical
+   0 = No
+   1 = Yes
+
+Age in years ("age"), continuous
+
+Residence Time in years ("restime"), continuous
+
+Height in cm ("height"), continuous 
+
+Weight in kg ("weight"), continuous
+
+Fish meals per week ("fishmlwk"), continuous
+
+Parts of fish consumed ("fishpart"), categorical
+    0 = none 
+    1 = muscle tissue only
+    2 = muscle tissue and sometimes whole fish 
+    3 = whole fish
+              
+Methyl Mercury in mg/g ("MeHg"), continuous
+
+Total Mercury in mg/g  ("TotHg"), continuous
+
+
+
+# Do this part before starting Questions 2-4!
+
+Before moving on to conducting automated model selection, you'll need to do some data processing. First, set the variables you'll use to the proper data types by completing the lines in the code chunk below. The variables you will include as predictors in your automated model selection are fisherman, age, restime, height, weight, fishmlwk, and fishpart
+
+```{r echo=TRUE}
+
+fish <- read.csv("fishermen_mercury.csv", header=TRUE, sep=",") # Loads the CSV file into memory. You may need to adapt this line to work on your computer
+
+# transform fishpart and fisherman to categorical variables    
+fish$fisherman_factor <- as.factor(fish$fisherman)
+    
+fish$fishpart_factor <- as.factor(fish$fishpart)
+
+```
+
+Check your work by running the following code chunk. Be sure that age, restime, height, weight, and fishmlwk are either integer-type variables or numeric-type variables (R should type these two appropriately automatically) and that fisherman_factor and fishpart_factor are factor-type variables before you complete the rest of the problem set.
+
+```{r echo=TRUE}
+
+# check the structure of the data
+str(fish)
+
+```
+
+Next, transform the outcome variable, TotHg, by taking it's log (note: do not conduct a Box Cox transformation; just take the log of the outcome variable). Conducting such a transformation isn't a routine part of automated model selection, but it is an option for improving regression diagnostics and we'll use it for this particular problem.
+
+```{r echo=TRUE}
+
+# take natural log of totHg
+fish$logTotHg <- log(fish$TotHg)
+
+```
+
+Finally, to make some of the later data manipulation easier, the following code chunk creates a new data set that contains only the transformed outcome and the predictors that will be included in the automated model selection. The select() function as used below requires that you have either the dplyr package or the tidyverse packaged loaded into memory. The first argument identifies the data set (fish) from which variables will be obtained, and the remaining arguments are variables from the fish data set that you want to be copied into the new data set. 
+
+```{r echo=TRUE}
+
+# create new dataset with for automated model selection
+fish.auto <- select(fish, fisherman_factor, fishpart_factor, age, restime, height, weight, fishmlwk, logTotHg)
+
+```
+
+Have one last look at your data structure to check that everything is as expected:
+
+```{r echo=TRUE}
+
+# check the data structure
+str(fish.auto)
+
+```
+
+## Question 2 - Forward selection (10 points)
+
+Use forward selection to find the best set of predictors in the fish.auto data set to predict the log of total mercury (logTotHg). Be sure to include fisherman+_factor, age, restime, height, weight, fishmlwk, and fishpart_factor in your pool of potential predictors. Do not include interaction terms or polynomial terms as part of your pool of potential predictors. 
+
+Be sure to include trace=1 in your function.
+
+```{r echo=TRUE}
+
+# create formula for forward model selection
+fwd_fmla <- as.formula(str_c("logTotHg ~ ",
+            str_c(names(fish.auto)[1:(ncol(fish.auto)-1)], collapse = "+")))
+# print formula
+fwd_fmla
+# create the model using automated forward selection
+fish.fwd <- step(lm(logTotHg ~1, data=fish.auto), scope = fwd_fmla,
+                 direction = "forward", trace = 1)
+
+```
+
+Display the model selected using forward selection by using the summary() function.
+
+```{r echo=TRUE}
+
+# print summary  of fish.fwd model
+summary(fish.fwd)
+
+```
+
+## Question 3 - Backward selection (10 points)
+
+Use backward selection to find the best set of predictors in the fish.auto data set to predict the log of total mercury (logTotHg). Be sure to include fisherman+_factor, age, restime, height, weight, fishmlwk, and fishpart_factor in your pool of potential predictors. Do not include interaction terms or polynomial terms as part of your pool of potential predictors. 
+
+Be sure to include trace=1 in your function.
+
+```{r echo=TRUE}
+
+# create formula for forward model selection
+bwd_fmla <- as.formula(str_c("logTotHg ~ ",
+            str_c(names(fish.auto)[1:(ncol(fish.auto)-1)], collapse = "+")))
+# create bwd_scope
+bwd_scope <- as.formula("logTotHg ~1")
+# sanity check
+bwd_fmla
+bwd_scope
+# create the model using automated forward selection
+fish.bwd <- step(lm(bwd_fmla, data=fish.auto), scope = bwd_scope,
+                 direction = "backward", trace = 1)
+
+```
+
+Display the model selected using backward selection by using the summary() function.
+
+```{r echo=TRUE}
+
+# print model summary
+summary(fish.bwd)
+
+```
+
+## Question 4 - Best subsets selection (10 points)
+
+Use best subsets selection to find the best set of predictors in the fish.auto data set to predict the log of total mercury (logTotHg). Be sure to include fisherman_factor, age, restime, height, weight, fishmlwk, and fishpart_factor in your pool of potential predictors. Do not include interaction terms or polynomial terms as part of your pool of potential predictors. 
+
+For this problem, choose the best model based on BIC. 
+
+```{r echo=TRUE}
+
+# create the model matrix "x"
+x <- model.matrix(as.formula(str_c("logTotHg ~", 
+                str_c(names(fish.auto)[1:ncol(fish.auto)-1], 
+                      collapse = "+"))),fish.auto)
+# create the vector of outcomes
+y <- fish.auto$logTotHg
+
+# calculate the best subset of variables - removing (intercept)
+best <- regsubsets(x=x[,2:ncol(x)], y=y, method = "exhaustive", nvmax = 9, nbest=1)
+
+```
+
+Display the model selected using best subsets selection with BIC values.
+
+```{r echo=TRUE}
+# create the TRUE/FALSE table for the best model
+subsetsBoolean <- summary(best)$which
+subsetsBoolean
+```
+
+```{r echo=TRUE}
+
+# display the star table of the best subsets model
+subsetsStar <- summary(best)
+subsetsStar
+
+```
+```{r echo=TRUE}
+
+# quick visual of BIC for each subset size
+qplot(1:length(summary(best)$bic),summary(best)$bic)
+
+```
+
+
+```{r echo=TRUE}
+
+# pick the model with the lowest BIC from "best"
+# min function searches BIC's and returns the model number model with lowest BIC
+best.subset.bic <- which(summary(best)$bic==min(summary(best)$bic))[1]
+
+# pull dimension (variable) names from the model based TRUE/FALSE
+varnames <- attr(subsetsBoolean, "dimnames")[[2]]
+
+# display the variables in best 
+best.varnames <- varnames[subsetsBoolean[best.subset.bic,]]
+
+# print variables
+best.varnames
+
+```
+```{r echo=TRUE}
+# create model using variables displayed above
+best.lm.bic <- lm(logTotHg ~ fishpart_factor + weight, data=fish.auto)
+# print the model summary
+summary(best.lm.bic)
+```
+
+
+To compare the results of the best subsets selection with the results of forward and backward selection, you'll need to convert the model BIC values to AIC values. There is an example of how to do this in the async (3.3 Best Subsets Selection). 
+
+```{r echo=TRUE}
+
+# get bic's
+bic <- summary(best)$bic
+#  fitted predictors plus intercept and variance
+q <- 1:length(bic)+2
+# get the number of observations 
+n <- nrow(fish.auto)
+# calculate Akaike information criterion
+aic <- bic-log(n)*q+2*q
+# quick visual of aic
+qplot(1:length(aic),aic)
+
+```
+
+Once this is done, determine the best model using best subsets using the AIC values
+
+```{r echo=TRUE}
+
+# extract best subset based on Akaike information criteria
+best.subset.aic <- which(aic == min(aic))[1]
+
+# pull model parameters using subsetsBoolean since
+best.varnames.aic <- varnames[subsetsBoolean[best.subset.aic,]]
+
+# since the same model is produced we can also leverage one of the tables above
+subsetsStar
+
+```
+```{r echo=TRUE}
+
+# print the variable names
+best.varnames.aic
+
+```
+
+Display the model selected using best subsets selection with AIC values.
+
+```{r echo=TRUE}
+
+# create the model using the formula for best aic determined above
+best.lm.aic <- lm(logTotHg ~ fishpart_factor+weight, data=fish.auto)
+summary(best.lm.aic)
+
+```
+
+## Question 5 - 5 points
+
+Question 1: Which predictors were included in the model you chose using forward selection?
+
+Your answer here:
+
+The predictors "weight" and "fishpart_factor" were chosen by the forward selection model. 
+
+Question 2: Which predictors were included in the model you chose using backward selection?
+
+Your answer here:
+
+The predictors "weight" and "fishpart_factor" were chosen by the model using backward selection.
+
+Question 3: Which predictors were included in the model you chose using best subsets selection (AIC)?
+
+Your answer here:
+
+The predictors "weight and "fishpart_factor" were chosen by the best subsets model using AIC as the performance metric.
+
+Question 4: Which predictors were included in the model you chose using best subsets selection (BIC)?
+
+Your answer here:
+
+The predictors "weight and "fishpart_factor" were chosen by the best subsets model using BIC as the performance metric.
