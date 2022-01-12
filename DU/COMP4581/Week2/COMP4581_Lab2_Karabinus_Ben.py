@@ -17,7 +17,7 @@ def main():
     print("{}\t {}\t {}\t {}\t".format('N', 'Merge', 'Insert', 'Bubble'))
 
     # perform each type of sort on random integer list of length "i"
-    for i in range(100, 1001, 100):
+    for i in range(100, 5001, 100):
         A = [i for i in range(1, i+1)]
         random.shuffle(A)
         Merge = timeSort(copy.copy(A), mergeSort)
@@ -69,7 +69,7 @@ def insertionSort(L):
 # function for bubble sort
 def bubbleSort(L):
     for i in range(len(L)-1):
-        for j in range(len(L)-1):
+        for j in range(len(L)-1-i):
             if L[j] > L[j+1]:
                 L[j], L[j+1] = L[j+1], L[j]
     return L
