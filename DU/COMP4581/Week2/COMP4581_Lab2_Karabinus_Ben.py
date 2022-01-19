@@ -10,9 +10,7 @@ import random
 import copy
 
 
-
 def main():
-
     # print table using str.format
     print("{}\t {}\t {}\t {}\t".format('N', 'Merge', 'Insert', 'Bubble'))
 
@@ -45,8 +43,9 @@ def merge(A, B):
         j += 1
     return out
 
+
 # function for merge sort
-def mergeSort(L):
+def mergeSort(L):  # log_2(n)
     if len(L) < 2:
         return L[:]
     else:
@@ -55,8 +54,9 @@ def mergeSort(L):
         Right = mergeSort(L[mid:])
         return merge(Left, Right)
 
+
 # function for insertion sort
-def insertionSort(L):
+def insertionSort(L):  # n^2 worst case
     for i in range(1, len(L)):
         key = L[i]
         j = i-1
@@ -66,8 +66,9 @@ def insertionSort(L):
         L[j+1] = key
     return L
 
+
 # function for bubble sort
-def bubbleSort(L):
+def bubbleSort(L):  # n^2
     for i in range(len(L)-1):
         for j in range(len(L)-1-i):
             if L[j] > L[j+1]:
@@ -77,12 +78,12 @@ def bubbleSort(L):
 
 # function to time each sort
 def timeSort(A, sortFunction):
-    
     t1 = time()
     B = sortFunction(A)
     t2 = time()
-    mtime = round((t2-t1)*1000,1)
+    mtime = round((t2-t1)*1000, 1)
     return mtime
+
 
 if __name__ == '__main__':
     main()
