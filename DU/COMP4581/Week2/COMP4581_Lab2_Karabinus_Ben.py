@@ -27,7 +27,7 @@ def main():
 # function to merge lists
 def merge(A, B):
     out = []
-    i, j = 0,0
+    i, j = 0, 0
     while i < len(A) and j < len(B):
         if A[i] < B[j]:
             out.append(A[i])

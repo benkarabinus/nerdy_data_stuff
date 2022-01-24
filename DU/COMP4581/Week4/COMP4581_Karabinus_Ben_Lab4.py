@@ -74,9 +74,7 @@ def recCPairDistPoints(points):
     # base case
     if len(points) < 2:
         return float('inf')
-    if len(points) == 2:
-        return cPairDist(points)
-    if len(points) == 3:
+    if len(points) <= 3:
         return cPairDist(points)
     # divide
     left = points[:mid]
