@@ -56,8 +56,8 @@ def BFS(G, s):
     vertices = G.keys()
 
     for u in vertices:  # O(n)
-        dist[u] = float('inf')
-    dist[s] = 0
+        dist[u] = float('inf')  # distance for all vertices == infinity flag
+    dist[s] = 0  # distance of source node to itself is 0
     q.enqueue(s)
     while not q.empty():
         u = q.dequeue()
@@ -91,10 +91,26 @@ def main():
 
     adjList = loadGraph('/Users/benkarabinus/Documents/Git/nerdy_data_stuff/'
                         'DU/COMP4581/Assignment1/edges.txt')
-    distribution  = distanceDistribution(adjList)
+    distribution = distanceDistribution(adjList)
     print(distribution)
+
+
+"""
+The provided Facebook data satisifies the small world problem to the extent
+that approximately 98% of users represented by nodes in the graph are 6 connections
+or less away from each other.
+
+Aside
+
+After removing the print statements used for debuging the program runtime is
+roughly 3-4 minutes.
+
+A sample of the program output is given below:
+
+{0: '0.02%', 1: '1.08%', 4: '35.93%', 2: '16.65%', 3: '24.41%', 6: '4.15%',
+5: '15.72%', 7: '1.93%', 8: '0.10%'}
+"""
 
 
 if __name__ == '__main__':
     main()
-
