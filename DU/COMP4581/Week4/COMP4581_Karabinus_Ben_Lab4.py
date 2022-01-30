@@ -68,7 +68,7 @@ def cPairDist(points):
     return minD
 
 
-# recusrsiv function to find distance between two points
+# recusrsive function to find distance between two points
 def recCPairDistPoints(points):
     mid = len(points)//2
     # base case
@@ -78,7 +78,7 @@ def recCPairDistPoints(points):
         return cPairDist(points)
     # divide
     left = points[:mid]
-    right = points[mid+1:]
+    right = points[mid:]
     # conquer
     minLeft = recCPairDistPoints(left)
     minRight = recCPairDistPoints(right)
