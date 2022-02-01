@@ -20,7 +20,7 @@ class MyStack:
         return self.stack.pop()
 
     def top(self):
-        return self.stack[len(self.stack)-1]
+        return self.stack[-1]
 
     def empty(self):
         return len(self.stack) == 0
@@ -57,7 +57,7 @@ def main():
     print(s.top())
     print(s.pop())
     print(s.pop())
-    #print(s.pop())  # throws error empty stack
+    print(s.pop())  # throws error empty stack
 
     # testing code for Queue
     q = MyQueue()
@@ -70,7 +70,7 @@ def main():
     print(q.front())
     print(q.dequeue())
     print(q.dequeue())
-    #print(q.dequeue())  # throws error empty queue
+    print(q.dequeue())  # throws error empty queue
 
 
 if __name__ == '__main__':
