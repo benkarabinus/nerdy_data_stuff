@@ -13,10 +13,10 @@ import yfinance as yf
 
 def main():
 
-    partOne()
+    #partOne()
     #partTwo()
     #partThree()
-    #partFour()
+    partFour()
 
 
 def partOne():
@@ -93,6 +93,10 @@ def partFour():
     ax1 = fig.add_axes([0.1, 0.1, 0.8, 0.3])
     ax1.plot(googleJan21.index, googleJan21['Volume'])
     ax1.set_title("Google Stock Volume January 2021 (millions of shares)")
+    """
+    "Share axis"
+    ax0.sharex(ax1)
+    """
     plt.show()
 
 
