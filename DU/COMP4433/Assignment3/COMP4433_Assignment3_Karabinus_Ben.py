@@ -38,14 +38,13 @@ def partTwo():
     print(diamonds.head())
     print(diamonds.color.unique())
     print(diamonds.cut.unique())
-    diamondsFiltered = diamonds[(diamonds.color != 'E') &
-                                (diamonds.color != 'D') &
-                                (diamonds.cut != 'Fair')]
-    print(diamondsFiltered.color.unique())
-    print(diamondsFiltered.cut.unique())
-    g0 = sns.FacetGrid(diamonds, col='cut', row='color', height=1.5, aspect=1.5)
+    diamonds.color.cat.remove_categories(['E', 'D'], inplace=True)
+    diamonds.cut.cat.remove_categories(['Fair'], inplace=True)
+    print(diamonds.color.unique())
+    print(diamonds.cut.unique())
+    g0 = sns.FacetGrid(diamonds, col='cut', row='color')
     g0.fig.suptitle("Scatterplot Diamonds")
-    g0.map(sns.scatterplot, 'price', 'carat', )
+    g0.map(sns.scatterplot, 'carat', 'price')
     g0.tight_layout()
     plt.show()
 
@@ -75,8 +74,8 @@ def partFour():
 
 def main():
 
-    partOne()
-    #partTwo()
+    #partOne()
+    partTwo()
     #partThree()
     #partFour()
 
