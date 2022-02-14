@@ -35,12 +35,11 @@ def DPcoins(coins, amount):
     makeChange[0] = 0
     # Fill in the rest of the table
     for tableIndex in range(1, amount+1):
-        #print(minCoins)
         result = tableIndex
         makeChange[tableIndex] = 1
         for i in range(len(coins)):
             if coins[i] <= tableIndex:
-                #remainder = (tableIndex-coins[i])
+                # remainder = (tableIndex-coins[i])
                 currentResult = 1 + minCoins[tableIndex-coins[i]]
                 if currentResult < result:
                     result = currentResult
@@ -57,7 +56,7 @@ def DPcoins(coins, amount):
 
 def main():
 
-    C = [1, 5, 10, 12, 25] # coin denominations (must include a penny)
+    C = [1, 5, 10, 12, 25]  # coin denominations (must include a penny)
     A = int(input('Enter desired amount of change: '))
     assert A >= 0
 
