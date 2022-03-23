@@ -1,0 +1,33 @@
+,team,bmk,uni,cch,stx,smk,aff,slp,nyp,frl,bng,trd,bwg,fut,pla,own,beh,Name,Capacity,Location,Surface,Roof type,Team(s),Opened,conference,lat,long
+0,Green Bay Packers,0,94,81,100,100,94,84,52,100,81,100,6,77,97,100,69,Lambeau Field,81441,"Green Bay, Wisconsin",Desso GrassMaster,Open,Green Bay Packers,1957,NFC,44.501389,-88.062222
+1,Pittsburgh Steelers,32,100,65,58,68,74,68,77,84,42,90,29,81,84,97,69,Heinz Field,68400,"Pittsburgh, Pennsylvania",Kentucky bluegrass,Open,Pittsburgh Steelers,2001,AFC,40.446667,-80.015833
+2,Kansas City Chiefs,26,71,84,84,74,71,97,35,71,48,45,77,94,71,87,44,Arrowhead Stadium,76416,"Kansas City, Missouri",Bermuda grass,Open,Kansas City Chiefs,1972,AFC,39.048889,-94.483889
+3,New England Patriots,68,68,100,68,32,26,23,90,90,84,81,0,87,94,65,77,Gillette Stadium,66829,"Foxborough, Massachusetts",FieldTurf CORE,Open,New England Patriots,2002,AFC,42.090944,-71.26344
+4,Buffalo Bills,3,81,58,32,97,97,55,81,55,61,48,74,68,58,77,69,New Era Field,71608,"Orchard Park, New York",A-Turf Titan 50,Open,Buffalo Bills,1973,AFC,42.773611,-78.786944
+5,Carolina Panthers,35,16,52,61,65,84,61,68,74,90,6,52,90,77,74,44,Bank of America Stadium,75523,"Charlotte, North Carolina",Bermuda grass,Open,Carolina Panthers,1996,NFC,35.225833,-80.852778
+6,Seattle Seahawks,58,35,95,90,42,23,6,13,97,100,35,26,100,100,94,29,CenturyLink Field,69000,"Seattle, Washington",FieldTurf Revolution 360,Open,Seattle Seahawks,2002,NFC,47.595278,-122.331667
+7,Indianapolis Colts,19,74,68,97,81,77,100,61,94,94,71,23,26,87,48,16,Lucas Oil Stadium,67000,"Indianapolis, Indiana",Shaw Sports Momentum Pro,Retractable,Indianapolis Colts,2008,AFC,39.760056,-86.163806
+8,Arizona Cardinals,65,6,95,87,35,90,16,16,77,68,29,42,84,81,71,56,State Farm Stadium,63400,"Glendale, Arizona",Bermuda grass,Retractable,Arizona Cardinals,2006,NFC,33.5275,-112.2625
+9,Baltimore Ravens,39,29,90,81,61,81,45,87,68,74,26,19,42,90,90,6,M&T Bank Stadium,71008,"Baltimore, Maryland",Bermuda grass,Open,Baltimore Ravens,1998,AFC,39.2781,-76.6227
+10,Houston Texans,87,32,55,71,13,48,52,23,81,35,0,39,61,74,68,95,NRG Stadium,72220,"Houston, Texas",Hellas Matrix Turf,Retractable,Houston Texans,2002,AFC,29.6849,-95.4109
+11,New Orleans Saints,6,45,87,74,94,87,58,29,87,45,16,16,23,65,61,84,Mercedes-Benz Superdome,73208,"New Orleans, Louisiana",FieldTurf Revolution 360,Fixed,New Orleans Saints,1975,NFC,29.950833,-90.081111
+12,Philadelphia Eagles,81,77,71,52,19,29,35,94,52,26,55,55,45,55,39,95,Lincoln Financial Field,69596,"Philadelphia, Pennsylvania",Desso GrassMaster,Open,Philadelphia Eagles,2003,NFC,39.900833,-75.1675
+13,Denver Broncos,42,23,45,65,58,45,39,19,61,97,68,10,97,68,81,0,Empower Field at Mile High,76125,"Denver, Colorado",Kentucky bluegrass,Open,Denver Broncos,2001,AFC,39.743889,-105.02
+14,Detroit Lions,61,19,35,45,39,39,81,71,32,58,42,61,58,35,42,84,Ford Field,65000,"Detroit, Michigan",FieldTurf Classic HD,Fixed,Detroit Lions,2002,NFC,42.34,-83.045556
+15,Minnesota Vikings,55,52,74,35,45,52,77,39,39,29,52,81,74,52,45,44,U.S. Bank Stadium,66655,"Minneapolis, Minnesota",UBU Speed Series S5-M Synthetic Turf,Fixed,Minnesota Vikings,2016,NFC,44.9735,-93.2575
+16,New York Giants,100,65,77,42,0,13,29,100,48,23,97,58,39,48,84,10,MetLife Stadium,82500,"East Rutherford, New Jersey",UBU Sports Speed Series S5-M Synthetic Turf,Open,New York Giants,2010,NFC,40.813611,-74.074444
+17,Atlanta Falcons,74,13,48,48,26,61,74,55,58,55,10,35,48,42,58,56,Mercedes-Benz Stadium,71000,"Atlanta, Georgia",FieldTurf Revolution,Retractable,Atlanta Falcons,2017,NFC,33.7552,-84.4009
+18,Dallas Cowboys,90,84,42,77,10,16,65,26,45,77,87,32,29,61,52,29,AT&T Stadium,80000,"Arlington, Texas",Hellas Matrix Turf,Retractable,Dallas Cowboys,2009,NFC,32.747778,-97.092778
+19,Jacksonville Jaguars,13,0,61,94,87,100,42,45,65,3,3,100,6,45,55,29,TIAA Bank Field,69132,"Jacksonville, Florida",Bermuda grass,Open,Jacksonville Jaguars,1995,AFC,30.323889,-81.6375
+20,Miami Dolphins,77,48,6,29,23,35,19,32,29,71,58,65,32,16,32,95,Hard Rock Stadium,65326,"Miami Gardens, Florida",Platinum TE Paspalum,Open,Miami Dolphins,1987,AFC,25.958056,-80.238889
+21,Cincinnati Bengals,29,3,13,19,71,58,87,65,26,87,23,13,71,32,29,29,Paul Brown Stadium,65515,"Cincinnati, Ohio",UBU Speed Series S5-M Synthetic Turf,Open,Cincinnati Bengals,2000,AFC,39.095444,-84.516039
+22,Las Vegas Raiders,10,97,32,3,90,65,0,0,42,0,65,94,35,19,19,69,Allegiant Stadium,65000,"Las Vegas, NV",Bermuda grass,Fixed,Las Vegas Raiders,2020,AFC,36.0908,-115.1836
+23,Tampa Bay Buccaneers,45,10,29,55,55,68,32,42,35,13,13,97,13,23,35,44,Raymond James Stadium,65890,"Tampa, Florida",Bermuda grass,Open,Tampa Bay Buccaneers,1998,NFC,27.975833,-82.503333
+24,Los Angeles Rams,97,42,39,6,3,55,10,6,6,39,61,90,65,29,0,56,Los Angeles Memorial Coliseum,78500,"Los Angeles, California",Bermuda grass,Open,Los Angeles Rams,1923,NFC,34.0140,-118.2880
+25,Chicago Bears,94,90,26,16,6,6,90,58,13,19,94,48,19,0,26,56,Soldier Field,61500,"Chicago, Illinois",Kentucky bluegrass,Open,Chicago Bears,1924,NFC,41.8623,-87.6167
+26,Cleveland Browns,23,39,16,26,77,42,71,74,10,32,77,87,3,10,10,16,FirstEnergy Stadium,67895,"Cleveland, Ohio",Kentucky bluegrass,Open,Cleveland Browns,1999,AFC,41.506111,-81.699444
+27,Los Angeles Chargers,52,87,19,0,48,19,13,10,23,52,39,45,16,39,3,84,Dignity Health Sports Park,27000,"Carson, California",Bermuda grass,Open,Los Angeles Chargers,2003,AFC,33.8644,-118.2611
+28,San Francisco 49ers,48,61,0,39,52,10,3,3,3,65,84,3,10,26,6,95,Levi's Stadium,68500,"Santa Clara, California",Bermuda grass / Perennial Ryegrass mixture,Open,San Francisco 49ers,2014,NFC,37.403,121.97
+29,New York Jets,71,58,23,23,29,3,29,100,16,10,19,68,52,13,23,16,MetLife Stadium,82500,"East Rutherford, New Jersey",UBU Sports Speed Series S5-M Synthetic Turf,Open,New York Jets,2010,AFC,40.813611,-74.074444
+30,Washington Football Team,84,26,3,10,16,0,48,84,0,6,74,84,55,3,16,3,FedExField,82000,"Landover, Maryland",Bermuda grass,Open,Washington Football Team,1997,NFC,38.907778,-76.864444
+31,Tennessee Titans,16,55,10,13,84,32,94,48,19,16,32,71,0,6,13,29,Nissan Stadium,69143,"Nashville, Tennessee",Bermuda grass,Open,Tennessee Titans,1999,AFC,36.166389,-86.771389

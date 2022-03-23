@@ -85,7 +85,7 @@ def main():
     dpTable, traceback, maxReturn = optomizeinvestments(funds, numProperties,
                                                         properties)
     winners = trace(dpTable, traceback, numProperties, funds)
-    print("The optimal states in which to invest the alloted million dollars "
+    print("The optimal states in which to invest the alloted one million dollars "
           "are as follows:")
     print()
     for winner in winners:
