@@ -8,6 +8,11 @@ ipykernel = "*"
 seaborn = "*"
 numpy = "*"
 scikit-learn = "*"
+pandas-profiling = "*"
+jupyter = "*"
+matplotlib = "*"
+pandas = "*"
+plotly = "*"
 
 [dev-packages]
 
