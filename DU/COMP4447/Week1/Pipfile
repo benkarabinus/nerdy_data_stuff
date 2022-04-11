@@ -12,6 +12,7 @@ pillow = "*"
 matplotlib = "*"
 beautifulsoup4 = "*"
 lxml = "*"
+graphviz = "*"
 
 [dev-packages]
 
