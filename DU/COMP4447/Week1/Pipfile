@@ -13,6 +13,7 @@ matplotlib = "*"
 beautifulsoup4 = "*"
 lxml = "*"
 graphviz = "*"
+pandas = "*"
 
 [dev-packages]
 
