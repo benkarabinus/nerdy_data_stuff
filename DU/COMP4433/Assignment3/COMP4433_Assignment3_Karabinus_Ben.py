@@ -74,8 +74,8 @@ def partFour():
 
 def main():
 
-    #partOne()
-    partTwo()
+    partOne()
+    #partTwo()
     #partThree()
     #partFour()
 
