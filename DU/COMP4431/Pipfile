@@ -13,6 +13,9 @@ jupyter = "*"
 matplotlib = "*"
 pandas = "*"
 plotly = "*"
+tslearn = "*"
+statsmodels = "*"
+yellowbrick = "*"
 
 [dev-packages]
 
