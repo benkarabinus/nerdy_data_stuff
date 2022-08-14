@@ -11,6 +11,7 @@ seaborn = "*"
 matplotlib = "*"
 ipykernel = "*"
 jupyter = "*"
+tensorflow = "*"
 
 [dev-packages]
 
