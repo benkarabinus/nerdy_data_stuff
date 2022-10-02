@@ -14,6 +14,9 @@ seaborn = "*"
 keras = "*"
 tensorflow = "*"
 scikit-learn = "*"
+emoji = "*"
+wordcloud = "*"
+contractions = "*"
 
 [dev-packages]
 
